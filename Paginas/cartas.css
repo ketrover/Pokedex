@@ -1,0 +1,9072 @@
+header {
+  background-color: #131A41;
+  width: 100%;
+  position: fixed;
+  z-index: 100;
+  height: 80px;
+  padding: 5px;
+  justify-content: center;
+  font-family: sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  background: #838fd3;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  flex-direction: column;
+  position: relative;
+}
+
+nav {
+  float: center;
+  list-style: none;
+  overflow: hidden;
+
+}
+
+.letra {
+  float: right;
+  margin-right: 20px;
+}
+
+.letra2 {
+  float: left;
+  margin-left: -30px;
+
+}
+
+.pepe {
+  float: left;
+  width: 250px;
+  height: 70px;
+  align-items: center;
+  margin-right: 30px;
+}
+
+.pepe2 {
+  float: right;
+  width: 250px;
+  height: 70px;
+  align-items: center;
+  margin-right: 10px;
+
+}
+
+nav ul {
+  list-style: none;
+  overflow: hidden;
+}
+
+nav ul li a {
+  font-family: Impact, sans-serif;
+  font-size: 20px;
+}
+
+nav ul li a {
+  display: block;
+  padding: 10px;
+  color: aquamarine;
+  text-decoration: none;
+}
+
+a {
+  text-decoration: none;
+  display: block;
+  padding: 10px;
+  color: aquamarine;
+  text-decoration: none;
+  font-family: Impact, sans-serif;
+  margin-right: 120px;
+  align-items: center;
+  justify-content: center;
+}
+
+.letra:hover {
+  background: rgba(84, 124, 209, 0.801);
+  color: rgba(4, 23, 65, 0.801);
+}
+
+.letra2:hover {
+  background: rgba(84, 124, 209, 0.801);
+  color: rgba(4, 23, 65, 0.801);
+}
+
+.letra:active {
+  color: blueviolet;
+  background: whitesmoke;
+}
+
+.letra2:active {
+  color: blueviolet;
+  background: whitesmoke;
+}
+
+.letra3:active {
+  color: rgb(200, 190, 212);
+
+}
+
+.letra3{
+  float: center;
+  position: relative;
+  margin: 20px;
+  top: -20px;
+  margin-right: 255px;
+}
+
+
+
+
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+
+/*:::::Pie de Pagina*/
+.pie-pagina {
+  width: 101.5%;
+  background-color: #131A41;
+}
+
+.pie-pagina .grupo-1 {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 50px;
+  padding: 45px 0px;
+}
+
+.pie-pagina .grupo-1 .box figure {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pie-pagina .grupo-1 .box figure img {
+  width: 250px;
+}
+
+.pie-pagina .grupo-1 .box h2 {
+  color: #fff;
+  margin-bottom: 25px;
+  font-size: 20px;
+}
+
+.pie-pagina .grupo-1 .box p {
+  color: #efefef;
+  margin-bottom: 10px;
+}
+
+.pie-pagina .grupo-1 .red-social a {
+  display: inline-block;
+  text-decoration: none;
+  width: 45px;
+  height: 45px;
+  line-height: 45px;
+  color: #fff;
+  margin-right: 10px;
+  background-color: #0d2033;
+  text-align: center;
+  transition: all 300ms ease;
+}
+
+.pie-pagina .grupo-1 .red-social a:hover {
+  color: aqua;
+}
+
+.pie-pagina .grupo-2 {
+  background-color: #0a1a2a;
+  padding: 15px 10px;
+  text-align: center;
+  color: #fff;
+}
+
+.pie-pagina .grupo-2 small {
+  font-size: 15px;
+}
+
+@media screen and (max-width:800px) {
+  .pie-pagina .grupo-1 {
+    width: 100%;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 30px;
+    padding: 35px 0px;
+  }
+}
+
+.card {
+  margin-right: 900px;
+
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+  font-family: "Roboto", sans-serif;
+}
+
+/*:::::Pikachu*/
+.card {
+  width: 20rem;
+  height: 25rem;
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: pointer;
+  position: relative;
+  color: #030303;
+  box-shadow: 0 10px 30px 5px rgba(0, 0, 0, 0.2);
+  font-family: Impact;
+  top: 50px;
+}
+
+.card img {
+  position: absolute;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0.9;
+  transition: opacity 0.2s ease-out;
+  background: gold;
+}
+
+.card h2 {
+  position: absolute;
+  inset: auto auto 30px 30px;
+  margin: 0;
+  transition: inset 0.3s 0.3s ease-out;
+  font-family: "impact", sans-serif;
+  font-weight: normal;
+  text-transform: uppercase;
+  color: rgb(160, 163, 0);
+}
+
+.card p,
+.card a {
+  position: absolute;
+  opacity: 0;
+  max-width: 80%;
+  transition: opacity 0.3s ease-out;
+}
+
+.card p {
+  inset: auto auto 80px 30px;
+}
+
+.card a {
+  inset: auto auto 40px 30px;
+  color: inherit;
+  text-decoration: none;
+}
+
+.card:hover h2 {
+  inset: auto auto 220px 30px;
+  transition: inset 0.3s ease-out;
+}
+
+.card:hover p,
+.card:hover a {
+  opacity: 1;
+  transition: opacity 0.5s 0.1s ease-in;
+}
+
+.card:hover img {
+  transition: opacity 0.3s ease-in;
+  opacity: 1;
+}
+
+.material-symbols-outlined {
+  vertical-align: middle;
+}
+
+.charmander1 {
+  margin-right: 900px;
+  top: -40px;
+
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+  font-family: "Roboto", sans-serif;
+}
+
+.charmander1 {
+  width: 20rem;
+  height: 25rem;
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: pointer;
+  position: relative;
+  color: #030303;
+  box-shadow: 0 10px 30px 5px rgba(0, 0, 0, 0.2);
+  font-family: Impact;
+}
+
+.charmander1 img {
+  position: absolute;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0.9;
+  transition: opacity 0.2s ease-out;
+  background: rgb(71, 7, 7);
+}
+
+.charmander1 h2 {
+  position: absolute;
+  inset: auto auto 30px 30px;
+  margin: 0;
+  transition: inset 0.3s 0.3s ease-out;
+  font-family: "impact", sans-serif;
+  font-weight: normal;
+  text-transform: uppercase;
+  color: rgb(232, 233, 212);
+}
+
+.charmander1 p,
+.charmander1 a {
+  position: absolute;
+  opacity: 0;
+  max-width: 80%;
+  transition: opacity 0.3s ease-out;
+}
+
+.charmander1 p {
+  inset: auto auto 80px 30px;
+}
+
+.charmander1 a {
+  inset: auto auto 40px 30px;
+  color: inherit;
+  text-decoration: none;
+}
+
+.charmander1:hover h2 {
+  inset: auto auto 220px 30px;
+  transition: inset 0.3s ease-out;
+}
+
+.charmander1:hover p,
+.charmander1:hover a {
+  opacity: 1;
+  transition: opacity 0.5s 0.1s ease-in;
+}
+
+.charmander1:hover img {
+  transition: opacity 0.3s ease-in;
+  opacity: 1;
+}
+
+.charmander2 {
+  vertical-align: middle;
+}
+
+.Squirtle1 {
+  margin-left: 900px;
+  top: -955px;
+}
+
+.Squirtle1 {
+  width: 20rem;
+  height: 25rem;
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: pointer;
+  position: relative;
+  color: #030303;
+  box-shadow: 0 10px 30px 5px rgba(0, 0, 0, 0.2);
+  font-family: Impact;
+}
+
+.Squirtle1 img {
+  position: absolute;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0.9;
+  transition: opacity 0.2s ease-out;
+  background: rgb(5, 80, 141);
+}
+
+.Squirtle1 h2 {
+  position: absolute;
+  inset: auto auto 30px 30px;
+  margin: 0;
+  transition: inset 0.3s 0.3s ease-out;
+  font-family: "impact", sans-serif;
+  font-weight: normal;
+  text-transform: uppercase;
+  color: rgb(232, 233, 212);
+}
+
+.Squirtle1 p,
+.Squirtle1 a {
+  position: absolute;
+  opacity: 0;
+  max-width: 80%;
+  transition: opacity 0.3s ease-out;
+}
+
+.Squirtle1 p {
+  inset: auto auto 80px 30px;
+}
+
+.Squirtle1 a {
+  inset: auto auto 40px 30px;
+  color: inherit;
+  text-decoration: none;
+}
+
+.Squirtle1:hover h2 {
+  inset: auto auto 220px 30px;
+  transition: inset 0.3s ease-out;
+}
+
+.Squirtle1:hover p,
+.Squirtle1:hover a {
+  opacity: 1;
+  transition: opacity 0.5s 0.1s ease-in;
+}
+
+.Squirtle1:hover img {
+  transition: opacity 0.3s ease-in;
+  opacity: 1;
+}
+
+.Squirtle1 {
+  vertical-align: middle;
+}
+
+
+.Charmeleon {
+  margin-left: 900px;
+  top: -1046px;
+}
+
+.Charmeleon {
+  width: 20rem;
+  height: 25rem;
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: pointer;
+  position: relative;
+  color: #030303;
+  box-shadow: 0 10px 30px 5px rgba(0, 0, 0, 0.2);
+  font-family: Impact;
+}
+
+.Charmeleon img {
+  position: absolute;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0.9;
+  transition: opacity 0.2s ease-out;
+  background: rgb(197, 46, 8);
+}
+
+.Charmeleon h2 {
+  position: absolute;
+  inset: auto auto 30px 30px;
+  margin: 0;
+  transition: inset 0.3s 0.3s ease-out;
+  font-family: "impact", sans-serif;
+  font-weight: normal;
+  text-transform: uppercase;
+  color: rgb(232, 233, 212);
+}
+
+.Charmeleon p,
+.Charmeleon a {
+  position: absolute;
+  opacity: 0;
+  max-width: 80%;
+  transition: opacity 0.3s ease-out;
+}
+
+.Charmeleon p {
+  inset: auto auto 80px 30px;
+}
+
+.Charmeleon a {
+  inset: auto auto 40px 30px;
+  color: inherit;
+  text-decoration: none;
+}
+
+.Charmeleon:hover h2 {
+  inset: auto auto 220px 30px;
+  transition: inset 0.3s ease-out;
+}
+
+.Charmeleon:hover p,
+.Charmeleon:hover a {
+  opacity: 1;
+  transition: opacity 0.5s 0.1s ease-in;
+}
+
+.Charmeleon:hover img {
+  transition: opacity 0.3s ease-in;
+  opacity: 1;
+}
+
+.Charmeleon2 {
+  vertical-align: middle;
+}
+
+
+
+
+
+.Charizad {
+  margin-left: 35px;
+  top: -1950px;
+}
+
+.Charizad {
+  width: 20rem;
+  height: 25rem;
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: pointer;
+  position: relative;
+  color: #030303;
+  box-shadow: 0 10px 30px 5px rgba(0, 0, 0, 0.2);
+  font-family: Impact;
+}
+
+.Charizad img {
+  position: absolute;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0.9;
+  transition: opacity 0.2s ease-out;
+  background: rgb(197, 46, 8);
+}
+
+.Charizad h2 {
+  position: absolute;
+  inset: auto auto 30px 30px;
+  margin: 0;
+  transition: inset 0.3s 0.3s ease-out;
+  font-family: "impact", sans-serif;
+  font-weight: normal;
+  text-transform: uppercase;
+  color: rgb(232, 233, 212);
+}
+
+.Charizad p,
+.Charizad a {
+  position: absolute;
+  opacity: 0;
+  max-width: 80%;
+  transition: opacity 0.3s ease-out;
+}
+
+.Charizad p {
+  inset: auto auto 80px 30px;
+}
+
+.Charizad a {
+  inset: auto auto 40px 30px;
+  color: inherit;
+  text-decoration: none;
+}
+
+.Charizad:hover h2 {
+  inset: auto auto 220px 30px;
+  transition: inset 0.3s ease-out;
+}
+
+.Charizad:hover p,
+.Charizad:hover a {
+  opacity: 1;
+  transition: opacity 0.5s 0.1s ease-in;
+}
+
+.Charizad:hover img {
+  transition: opacity 0.3s ease-in;
+  opacity: 1;
+}
+
+.Charizad2 {
+  vertical-align: middle;
+}
+
+
+
+
+
+
+.Wartortle {
+  margin-left: 30px;
+  top: -2040px;
+}
+
+.Wartortle {
+  width: 20rem;
+  height: 25rem;
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: pointer;
+  position: relative;
+  color: #030303;
+  box-shadow: 0 10px 30px 5px rgba(0, 0, 0, 0.2);
+  font-family: Impact;
+}
+
+.Wartortle img {
+  position: absolute;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0.9;
+  transition: opacity 0.2s ease-out;
+  background: rgb(65, 8, 197);
+}
+
+.Wartortle h2 {
+  position: absolute;
+  inset: auto auto 30px 30px;
+  margin: 0;
+  transition: inset 0.3s 0.3s ease-out;
+  font-family: "impact", sans-serif;
+  font-weight: normal;
+  text-transform: uppercase;
+  color: rgb(232, 233, 212);
+}
+
+.Wartortle p,
+.Wartortle a {
+  position: absolute;
+  opacity: 0;
+  max-width: 80%;
+  transition: opacity 0.3s ease-out;
+}
+
+.Wartortle p {
+  inset: auto auto 80px 30px;
+}
+
+.Wartortle a {
+  inset: auto auto 40px 30px;
+  color: inherit;
+  text-decoration: none;
+}
+
+.Wartortle:hover h2 {
+  inset: auto auto 220px 30px;
+  transition: inset 0.3s ease-out;
+}
+
+.Wartortle:hover p,
+.Wartortle:hover a {
+  opacity: 1;
+  transition: opacity 0.5s 0.1s ease-in;
+}
+
+.Wartortle:hover img {
+  transition: opacity 0.3s ease-in;
+  opacity: 1;
+}
+
+.Wartortle2 {
+  vertical-align: middle;
+}
+
+
+
+
+
+.Blastoise {
+  margin-left: 30px;
+  top: -2130px;
+}
+
+.Blastoise {
+  width: 20rem;
+  height: 25rem;
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: pointer;
+  position: relative;
+  color: #030303;
+  box-shadow: 0 10px 30px 5px rgba(0, 0, 0, 0.2);
+  font-family: Impact;
+}
+
+.Blastoise img {
+  position: absolute;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0.9;
+  transition: opacity 0.2s ease-out;
+  background: rgb(4, 44, 155);
+}
+
+.Blastoise h2 {
+  position: absolute;
+  inset: auto auto 30px 30px;
+  margin: 0;
+  transition: inset 0.3s 0.3s ease-out;
+  font-family: "impact", sans-serif;
+  font-weight: normal;
+  text-transform: uppercase;
+  color: rgb(16, 48, 228);
+}
+
+.Blastoise p,
+.Blastoise a {
+  position: absolute;
+  opacity: 0;
+  max-width: 80%;
+  transition: opacity 0.3s ease-out;
+}
+
+.Blastoise p {
+  inset: auto auto 80px 30px;
+}
+
+.Blastoise a {
+  inset: auto auto 40px 30px;
+  color: inherit;
+  text-decoration: none;
+}
+
+.Blastoise:hover h2 {
+  inset: auto auto 220px 30px;
+  transition: inset 0.3s ease-out;
+}
+
+.Blastoise:hover p,
+.Blastoise:hover a {
+  opacity: 1;
+  transition: opacity 0.5s 0.1s ease-in;
+}
+
+.Blastoise:hover img {
+  transition: opacity 0.3s ease-in;
+  opacity: 1;
+}
+
+.Blastoise2 {
+  vertical-align: middle;
+}
+
+
+
+
+
+.Blastoise {
+  margin-left: 30px;
+  top: -2130px;
+}
+
+.Blastoise {
+  width: 20rem;
+  height: 25rem;
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: pointer;
+  position: relative;
+  color: #030303;
+  box-shadow: 0 10px 30px 5px rgba(0, 0, 0, 0.2);
+  font-family: Impact;
+}
+
+.Blastoise img {
+  position: absolute;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0.9;
+  transition: opacity 0.2s ease-out;
+  background: rgb(4, 44, 155);
+}
+
+.Blastoise h2 {
+  position: absolute;
+  inset: auto auto 30px 30px;
+  margin: 0;
+  transition: inset 0.3s 0.3s ease-out;
+  font-family: "impact", sans-serif;
+  font-weight: normal;
+  text-transform: uppercase;
+  color: rgb(16, 48, 228);
+}
+
+.Blastoise p,
+.Blastoise a {
+  position: absolute;
+  opacity: 0;
+  max-width: 80%;
+  transition: opacity 0.3s ease-out;
+}
+
+.Blastoise p {
+  inset: auto auto 80px 30px;
+}
+
+.Blastoise a {
+  inset: auto auto 40px 30px;
+  color: inherit;
+  text-decoration: none;
+}
+
+.Blastoise:hover h2 {
+  inset: auto auto 220px 30px;
+  transition: inset 0.3s ease-out;
+}
+
+.Blastoise:hover p,
+.Blastoise:hover a {
+  opacity: 1;
+  transition: opacity 0.5s 0.1s ease-in;
+}
+
+.Blastoise:hover img {
+  transition: opacity 0.3s ease-in;
+  opacity: 1;
+}
+
+.Blastoise2 {
+  vertical-align: middle;
+}
+
+
+
+
+
+.Caterpie {
+  margin-left: 30px;
+  top: -2220px;
+}
+
+.Caterpie {
+  width: 20rem;
+  height: 25rem;
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: pointer;
+  position: relative;
+  color: #030303;
+  box-shadow: 0 10px 30px 5px rgba(0, 0, 0, 0.2);
+  font-family: Impact;
+}
+
+.Caterpie img {
+  position: absolute;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0.9;
+  transition: opacity 0.2s ease-out;
+  background: rgb(4, 155, 4);
+}
+
+.Caterpie h2 {
+  position: absolute;
+  inset: auto auto 30px 30px;
+  margin: 0;
+  transition: inset 0.3s 0.3s ease-out;
+  font-family: "impact", sans-serif;
+  font-weight: normal;
+  text-transform: uppercase;
+  color: rgb(246, 247, 252);
+}
+
+.Caterpie p,
+.Caterpie a {
+  position: absolute;
+  opacity: 0;
+  max-width: 80%;
+  transition: opacity 0.3s ease-out;
+}
+
+.Caterpie p {
+  inset: auto auto 80px 30px;
+}
+
+.Caterpie a {
+  inset: auto auto 40px 30px;
+  color: inherit;
+  text-decoration: none;
+}
+
+.Caterpie:hover h2 {
+  inset: auto auto 220px 30px;
+  transition: inset 0.3s ease-out;
+}
+
+.Caterpie:hover p,
+.Caterpie:hover a {
+  opacity: 1;
+  transition: opacity 0.5s 0.1s ease-in;
+}
+
+.Caterpie:hover img {
+  transition: opacity 0.3s ease-in;
+  opacity: 1;
+}
+
+.Caterpie2 {
+  vertical-align: middle;
+}
+
+
+
+.Weedle {
+  margin-left: 30px;
+  top: -2400px;
+}
+
+.Weedle {
+  width: 20rem;
+  height: 25rem;
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: pointer;
+  position: relative;
+  color: #030303;
+  box-shadow: 0 10px 30px 5px rgba(0, 0, 0, 0.2);
+  font-family: Impact;
+}
+
+.Weedle img {
+  position: absolute;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0.9;
+  transition: opacity 0.2s ease-out;
+  background: rgb(94, 72, 1);
+}
+
+.Weedle h2 {
+  position: absolute;
+  inset: auto auto 30px 30px;
+  margin: 0;
+  transition: inset 0.3s 0.3s ease-out;
+  font-family: "impact", sans-serif;
+  font-weight: normal;
+  text-transform: uppercase;
+  color: rgb(246, 247, 252);
+}
+
+.Weedle p,
+.Weedle a {
+  position: absolute;
+  opacity: 0;
+  max-width: 80%;
+  transition: opacity 0.3s ease-out;
+}
+
+.Weedle p {
+  inset: auto auto 80px 30px;
+}
+
+.Weedle a {
+  inset: auto auto 40px 30px;
+  color: inherit;
+  text-decoration: none;
+}
+
+.Weedle:hover h2 {
+  inset: auto auto 220px 30px;
+  transition: inset 0.3s ease-out;
+}
+
+.Weedle:hover p,
+.Weedle:hover a {
+  opacity: 1;
+  transition: opacity 0.5s 0.1s ease-in;
+}
+
+.Weedle:hover img {
+  transition: opacity 0.3s ease-in;
+  opacity: 1;
+}
+
+.Weedle2 {
+  vertical-align: middle;
+}
+
+
+
+
+
+.Metapod {
+  margin-left: 30px;
+  top: -2310px;
+}
+
+.Metapod {
+  width: 20rem;
+  height: 25rem;
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: pointer;
+  position: relative;
+  color: #030303;
+  box-shadow: 0 10px 30px 5px rgba(0, 0, 0, 0.2);
+  font-family: Impact;
+}
+
+.Metapod img {
+  position: absolute;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0.9;
+  transition: opacity 0.2s ease-out;
+  background: rgb(4, 155, 4);
+}
+
+.Metapod h2 {
+  position: absolute;
+  inset: auto auto 30px 30px;
+  margin: 0;
+  transition: inset 0.3s 0.3s ease-out;
+  font-family: "impact", sans-serif;
+  font-weight: normal;
+  text-transform: uppercase;
+  color: rgb(246, 247, 252);
+}
+
+.Metapod p,
+.Metapod a {
+  position: absolute;
+  opacity: 0;
+  max-width: 80%;
+  transition: opacity 0.3s ease-out;
+}
+
+.Metapod p {
+  inset: auto auto 80px 30px;
+}
+
+.Metapod a {
+  inset: auto auto 40px 30px;
+  color: inherit;
+  text-decoration: none;
+}
+
+.Metapod:hover h2 {
+  inset: auto auto 220px 30px;
+  transition: inset 0.3s ease-out;
+}
+
+.Metapod:hover p,
+.Metapod:hover a {
+  opacity: 1;
+  transition: opacity 0.5s 0.1s ease-in;
+}
+
+.Metapod:hover img {
+  transition: opacity 0.3s ease-in;
+  opacity: 1;
+}
+
+.Metapod2 {
+  vertical-align: middle;
+}
+
+
+
+
+.Rattata{
+  margin-left: 30px;
+  top: -2490px;
+}
+
+.Rattata {
+  width: 20rem;
+  height: 25rem;
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: pointer;
+  position: relative;
+  color: #030303;
+  box-shadow: 0 10px 30px 5px rgba(0, 0, 0, 0.2);
+  font-family: Impact;
+}
+
+.Rattata img {
+  position: absolute;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0.9;
+  transition: opacity 0.2s ease-out;
+  background: rgb(130, 4, 155);
+}
+
+.Rattata h2 {
+  position: absolute;
+  inset: auto auto 30px 30px;
+  margin: 0;
+  transition: inset 0.3s 0.3s ease-out;
+  font-family: "impact", sans-serif;
+  font-weight: normal;
+  text-transform: uppercase;
+  color: rgb(246, 247, 252);
+}
+
+.Rattata p,
+.Rattata a {
+  position: absolute;
+  opacity: 0;
+  max-width: 80%;
+  transition: opacity 0.3s ease-out;
+}
+
+.Rattata p {
+  inset: auto auto 80px 30px;
+}
+
+.Rattata a {
+  inset: auto auto 40px 30px;
+  color: inherit;
+  text-decoration: none;
+}
+
+.Rattata:hover h2 {
+  inset: auto auto 220px 30px;
+  transition: inset 0.3s ease-out;
+}
+
+.Rattata:hover p,
+.Rattata:hover a {
+  opacity: 1;
+  transition: opacity 0.5s 0.1s ease-in;
+}
+
+.Rattata:hover img {
+  transition: opacity 0.3s ease-in;
+  opacity: 1;
+}
+
+.Rattata2 {
+  vertical-align: middle;
+}
+
+
+
+
+.Raticate{
+  margin-right: 900px;
+  top: -4630px;
+}
+
+.Raticate {
+  width: 20rem;
+  height: 25rem;
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: pointer;
+  position: relative;
+  color: #030303;
+  box-shadow: 0 10px 30px 5px rgba(0, 0, 0, 0.2);
+  font-family: Impact;
+}
+
+.Raticate img {
+  position: absolute;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0.9;
+  transition: opacity 0.2s ease-out;
+  background: rgb(68, 70, 2);
+}
+
+.Raticate h2 {
+  position: absolute;
+  inset: auto auto 30px 30px;
+  margin: 0;
+  transition: inset 0.3s 0.3s ease-out;
+  font-family: "impact", sans-serif;
+  font-weight: normal;
+  text-transform: uppercase;
+  color: rgb(246, 247, 252);
+}
+
+.Raticate p,
+.Raticate a {
+  position: absolute;
+  opacity: 0;
+  max-width: 80%;
+  transition: opacity 0.3s ease-out;
+}
+
+.Raticate p {
+  inset: auto auto 80px 30px;
+}
+
+.Raticate a {
+  inset: auto auto 40px 30px;
+  color: inherit;
+  text-decoration: none;
+}
+
+.Raticate:hover h2 {
+  inset: auto auto 220px 30px;
+  transition: inset 0.3s ease-out;
+}
+
+.Raticate:hover p,
+.Raticate:hover a {
+  opacity: 1;
+  transition: opacity 0.5s 0.1s ease-in;
+}
+
+.Raticate:hover img {
+  transition: opacity 0.3s ease-in;
+  opacity: 1;
+}
+
+.Raticate2 {
+  vertical-align: middle;
+}
+
+
+
+
+
+
+.Jigglypuff{
+  margin-right: 900px;
+  top: -4720px;
+}
+
+.Jigglypuff {
+  width: 20rem;
+  height: 25rem;
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: pointer;
+  position: relative;
+  color: #030303;
+  box-shadow: 0 10px 30px 5px rgba(0, 0, 0, 0.2);
+  font-family: Impact;
+}
+
+.Jigglypuff img {
+  position: absolute;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0.9;
+  transition: opacity 0.2s ease-out;
+  background: rgb(230, 98, 171);
+}
+
+.Jigglypuff h2 {
+  position: absolute;
+  inset: auto auto 30px 30px;
+  margin: 0;
+  transition: inset 0.3s 0.3s ease-out;
+  font-family: "impact", sans-serif;
+  font-weight: normal;
+  text-transform: uppercase;
+  color: rgb(246, 247, 252);
+}
+
+.Jigglypuff p,
+.Jigglypuff a {
+  position: absolute;
+  opacity: 0;
+  max-width: 80%;
+  transition: opacity 0.3s ease-out;
+}
+
+.Jigglypuff p {
+  inset: auto auto 80px 30px;
+}
+
+.Jigglypuff a {
+  inset: auto auto 40px 30px;
+  color: inherit;
+  text-decoration: none;
+}
+
+.Jigglypuff:hover h2 {
+  inset: auto auto 220px 30px;
+  transition: inset 0.3s ease-out;
+}
+
+.Jigglypuff:hover p,
+.Jigglypuff:hover a {
+  opacity: 1;
+  transition: opacity 0.5s 0.1s ease-in;
+}
+
+.Jigglypuff:hover img {
+  transition: opacity 0.3s ease-in;
+  opacity: 1;
+}
+
+.Jigglypuff2 {
+  vertical-align: middle;
+}
+
+
+
+
+
+.Wigglytuff{
+  margin-right: 900px;
+  top: -4810px;
+}
+
+.Wigglytuff {
+  width: 20rem;
+  height: 25rem;
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: pointer;
+  position: relative;
+  color: #030303;
+  box-shadow: 0 10px 30px 5px rgba(0, 0, 0, 0.2);
+  font-family: Impact;
+}
+
+.Wigglytuff img {
+  position: absolute;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0.9;
+  transition: opacity 0.2s ease-out;
+  background: rgb(238, 70, 162);
+}
+
+.Wigglytuff h2 {
+  position: absolute;
+  inset: auto auto 30px 30px;
+  margin: 0;
+  transition: inset 0.3s 0.3s ease-out;
+  font-family: "impact", sans-serif;
+  font-weight: normal;
+  text-transform: uppercase;
+  color: rgb(246, 247, 252);
+}
+
+.Wigglytuff p,
+.Wigglytuff a {
+  position: absolute;
+  opacity: 0;
+  max-width: 80%;
+  transition: opacity 0.3s ease-out;
+}
+
+.Wigglytuff p {
+  inset: auto auto 80px 30px;
+}
+
+.Wigglytuff a {
+  inset: auto auto 40px 30px;
+  color: inherit;
+  text-decoration: none;
+}
+
+.Wigglytuff:hover h2 {
+  inset: auto auto 220px 30px;
+  transition: inset 0.3s ease-out;
+}
+
+.Wigglytuff:hover p,
+.Wigglytuff:hover a {
+  opacity: 1;
+  transition: opacity 0.5s 0.1s ease-in;
+}
+
+.Wigglytuff:hover img {
+  transition: opacity 0.3s ease-in;
+  opacity: 1;
+}
+
+.Wigglytuff2 {
+  vertical-align: middle;
+}
+
+
+
+
+.Ninetales{
+  margin-right: 900px;
+  top: -4900px;
+}
+
+.Ninetales {
+  width: 20rem;
+  height: 25rem;
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: pointer;
+  position: relative;
+  color: #030303;
+  box-shadow: 0 10px 30px 5px rgba(0, 0, 0, 0.2);
+  font-family: Impact;
+}
+
+.Ninetales img {
+  position: absolute;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0.9;
+  transition: opacity 0.2s ease-out;
+  background: rgb(204, 159, 11);
+}
+
+.Ninetales h2 {
+  position: absolute;
+  inset: auto auto 30px 30px;
+  margin: 0;
+  transition: inset 0.3s 0.3s ease-out;
+  font-family: "impact", sans-serif;
+  font-weight: normal;
+  text-transform: uppercase;
+  color: rgb(246, 247, 252);
+}
+
+.Ninetales p,
+.Ninetales a {
+  position: absolute;
+  opacity: 0;
+  max-width: 80%;
+  transition: opacity 0.3s ease-out;
+}
+
+.Ninetales p {
+  inset: auto auto 80px 30px;
+}
+
+.Ninetales a {
+  inset: auto auto 40px 30px;
+  color: inherit;
+  text-decoration: none;
+}
+
+.Ninetales:hover h2 {
+  inset: auto auto 220px 30px;
+  transition: inset 0.3s ease-out;
+}
+
+.Ninetales:hover p,
+.Ninetales:hover a {
+  opacity: 1;
+  transition: opacity 0.5s 0.1s ease-in;
+}
+
+.Ninetales:hover img {
+  transition: opacity 0.3s ease-in;
+  opacity: 1;
+}
+
+.Ninetales2 {
+  vertical-align: middle;
+}
+
+
+
+
+.Weavile{
+  margin-right: 900px;
+  top: -4990px;
+}
+
+.Weavile {
+  width: 20rem;
+  height: 25rem;
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: pointer;
+  position: relative;
+  color: #030303;
+  box-shadow: 0 10px 30px 5px rgba(0, 0, 0, 0.2);
+  font-family: Impact;
+}
+
+.Weavile img {
+  position: absolute;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0.9;
+  transition: opacity 0.2s ease-out;
+  background: rgb(31, 10, 109);
+}
+
+.Weavile h2 {
+  position: absolute;
+  inset: auto auto 30px 30px;
+  margin: 0;
+  transition: inset 0.3s 0.3s ease-out;
+  font-family: "impact", sans-serif;
+  font-weight: normal;
+  text-transform: uppercase;
+  color: rgb(246, 247, 252);
+}
+
+.Weavile p,
+.Weavile a {
+  position: absolute;
+  opacity: 0;
+  max-width: 80%;
+  transition: opacity 0.3s ease-out;
+}
+
+.Weavile p {
+  inset: auto auto 80px 30px;
+}
+
+.Weavile a {
+  inset: auto auto 40px 30px;
+  color: inherit;
+  text-decoration: none;
+}
+
+.Weavile:hover h2 {
+  inset: auto auto 220px 30px;
+  transition: inset 0.3s ease-out;
+}
+
+.Weavile:hover p,
+.Weavile:hover a {
+  opacity: 1;
+  transition: opacity 0.5s 0.1s ease-in;
+}
+
+.Weavile:hover img {
+  transition: opacity 0.3s ease-in;
+  opacity: 1;
+}
+
+.Weavile2 {
+  vertical-align: middle;
+}
+
+
+
+
+
+
+
+
+.Toxicroak{
+  margin-left: 20px;
+  top: -5032px;
+}
+
+.Toxicroak {
+  width: 20rem;
+  height: 25rem;
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: pointer;
+  position: relative;
+  color: #030303;
+  box-shadow: 0 10px 30px 5px rgba(0, 0, 0, 0.2);
+  font-family: Impact;
+}
+
+.Toxicroak img {
+  position: absolute;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0.9;
+  transition: opacity 0.2s ease-out;
+  background: rgb(31, 10, 109);
+}
+
+.Toxicroak h2 {
+  position: absolute;
+  inset: auto auto 30px 30px;
+  margin: 0;
+  transition: inset 0.3s 0.3s ease-out;
+  font-family: "impact", sans-serif;
+  font-weight: normal;
+  text-transform: uppercase;
+  color: rgb(246, 247, 252);
+}
+
+.Toxicroak p,
+.Toxicroak a {
+  position: absolute;
+  opacity: 0;
+  max-width: 80%;
+  transition: opacity 0.3s ease-out;
+}
+
+.Toxicroak p {
+  inset: auto auto 80px 30px;
+}
+
+.Toxicroak a {
+  inset: auto auto 40px 30px;
+  color: inherit;
+  text-decoration: none;
+}
+
+.Toxicroak:hover h2 {
+  inset: auto auto 220px 30px;
+  transition: inset 0.3s ease-out;
+}
+
+.Toxicroak:hover p,
+.Toxicroak:hover a {
+  opacity: 1;
+  transition: opacity 0.5s 0.1s ease-in;
+}
+
+.Toxicroak:hover img {
+  transition: opacity 0.3s ease-in;
+  opacity: 1;
+}
+
+.Toxicroak2 {
+  vertical-align: middle;
+}
+
+
+
+
+
+
+.Steenee {
+  margin-left: 19px;
+  top: -5022px;
+}
+
+.Steenee  {
+  width: 20rem;
+  height: 25rem;
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: pointer;
+  position: relative;
+  color: #030303;
+  box-shadow: 0 10px 30px 5px rgba(0, 0, 0, 0.2);
+  font-family: Impact;
+}
+
+.Steenee  img {
+  position: absolute;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0.9;
+  transition: opacity 0.2s ease-out;
+  background: rgb(122, 230, 95);
+}
+
+.Steenee  h2 {
+  position: absolute;
+  inset: auto auto 30px 30px;
+  margin: 0;
+  transition: inset 0.3s 0.3s ease-out;
+  font-family: "impact", sans-serif;
+  font-weight: normal;
+  text-transform: uppercase;
+  color: rgb(246, 247, 252);
+}
+
+.Steenee p,
+.Steenee a {
+  position: absolute;
+  opacity: 0;
+  max-width: 80%;
+  transition: opacity 0.3s ease-out;
+}
+
+.Steenee p {
+  inset: auto auto 80px 30px;
+}
+
+.Steenee a {
+  inset: auto auto 40px 30px;
+  color: inherit;
+  text-decoration: none;
+}
+
+.Steenee:hover h2 {
+  inset: auto auto 220px 30px;
+  transition: inset 0.3s ease-out;
+}
+
+.Steenee:hover p,
+.Steenee:hover a {
+  opacity: 1;
+  transition: opacity 0.5s 0.1s ease-in;
+}
+
+.Steenee:hover img {
+  transition: opacity 0.3s ease-in;
+  opacity: 1;
+}
+
+.Steenee h2 {
+  vertical-align: middle;
+}
+
+
+
+
+
+.Nosepass  {
+  margin-left: 19px;
+  top: -5010px;
+}
+
+.Nosepass   {
+  width: 20rem;
+  height: 25rem;
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: pointer;
+  position: relative;
+  color: #030303;
+  box-shadow: 0 10px 30px 5px rgba(0, 0, 0, 0.2);
+  font-family: Impact;
+}
+
+.Nosepass   img {
+  position: absolute;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0.9;
+  transition: opacity 0.2s ease-out;
+  background: rgb(124, 95, 230);
+}
+
+.Nosepass   h2 {
+  position: absolute;
+  inset: auto auto 30px 30px;
+  margin: 0;
+  transition: inset 0.3s 0.3s ease-out;
+  font-family: "impact", sans-serif;
+  font-weight: normal;
+  text-transform: uppercase;
+  color: rgb(246, 247, 252);
+}
+
+.Nosepass  p,
+.Nosepass  a {
+  position: absolute;
+  opacity: 0;
+  max-width: 80%;
+  transition: opacity 0.3s ease-out;
+}
+
+.Nosepass  p {
+  inset: auto auto 80px 30px;
+}
+
+.Nosepass  a {
+  inset: auto auto 40px 30px;
+  color: inherit;
+  text-decoration: none;
+}
+
+.Nosepass:hover h2 {
+  inset: auto auto 220px 30px;
+  transition: inset 0.3s ease-out;
+}
+
+.Nosepass:hover p,
+.Nosepass:hover a {
+  opacity: 1;
+  transition: opacity 0.5s 0.1s ease-in;
+}
+
+.Nosepass:hover img {
+  transition: opacity 0.3s ease-in;
+  opacity: 1;
+}
+
+.Nosepass h2 {
+  vertical-align: middle;
+}
+
+
+
+
+
+.Vikavolt  {
+  margin-left: 19px;
+  top: -5000px;
+}
+
+.Vikavolt{
+  width: 20rem;
+  height: 25rem;
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: pointer;
+  position: relative;
+  color: #030303;
+  box-shadow: 0 10px 30px 5px rgba(0, 0, 0, 0.2);
+  font-family: Impact;
+}
+
+.Vikavolt img {
+  position: absolute;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0.9;
+  transition: opacity 0.2s ease-out;
+  background: rgb(6, 84, 129);
+}
+
+.Vikavolt h2 {
+  position: absolute;
+  inset: auto auto 30px 30px;
+  margin: 0;
+  transition: inset 0.3s 0.3s ease-out;
+  font-family: "impact", sans-serif;
+  font-weight: normal;
+  text-transform: uppercase;
+  color: rgb(246, 247, 252);
+}
+
+.Vikavolt p,
+.Vikavolt a {
+  position: absolute;
+  opacity: 0;
+  max-width: 80%;
+  transition: opacity 0.3s ease-out;
+}
+
+.Vikavolt p {
+  inset: auto auto 80px 30px;
+}
+
+.Vikavolt a {
+  inset: auto auto 40px 30px;
+  color: inherit;
+  text-decoration: none;
+}
+
+.Vikavolt:hover h2 {
+  inset: auto auto 220px 30px;
+  transition: inset 0.3s ease-out;
+}
+
+.Vikavolt:hover p,
+.Vikavolt:hover a {
+  opacity: 1;
+  transition: opacity 0.5s 0.1s ease-in;
+}
+
+.Vikavolt:hover img {
+  transition: opacity 0.3s ease-in;
+  opacity: 1;
+}
+
+.Vikavolt h2 {
+  vertical-align: middle;
+}
+
+
+
+
+
+
+
+
+.Ditto  {
+  margin-left: 19px;
+  top: -4990px;
+}
+
+.Ditto{
+  width: 20rem;
+  height: 25rem;
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: pointer;
+  position: relative;
+  color: #030303;
+  box-shadow: 0 10px 30px 5px rgba(0, 0, 0, 0.2);
+  font-family: Impact;
+}
+
+.Ditto img {
+  position: absolute;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0.9;
+  transition: opacity 0.2s ease-out;
+  background: rgb(177, 97, 209);
+}
+
+.Ditto h2 {
+  position: absolute;
+  inset: auto auto 30px 30px;
+  margin: 0;
+  transition: inset 0.3s 0.3s ease-out;
+  font-family: "impact", sans-serif;
+  font-weight: normal;
+  text-transform: uppercase;
+  color: rgb(246, 247, 252);
+}
+
+.Ditto p,
+.Ditto a {
+  position: absolute;
+  opacity: 0;
+  max-width: 80%;
+  transition: opacity 0.3s ease-out;
+}
+
+.Ditto p {
+  inset: auto auto 80px 30px;
+}
+
+.Ditto a {
+  inset: auto auto 40px 30px;
+  color: inherit;
+  text-decoration: none;
+}
+
+.Ditto:hover h2 {
+  inset: auto auto 220px 30px;
+  transition: inset 0.3s ease-out;
+}
+
+.Ditto:hover p,
+.Ditto:hover a {
+  opacity: 1;
+  transition: opacity 0.5s 0.1s ease-in;
+}
+
+.Ditto:hover img {
+  transition: opacity 0.3s ease-in;
+  opacity: 1;
+}
+
+.Ditto h2 {
+  vertical-align: middle;
+}
+
+
+
+
+.Purrloin  {
+  margin-left: 19px;
+  top: -4982px;
+}
+
+.Purrloin{
+  width: 20rem;
+  height: 25rem;
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: pointer;
+  position: relative;
+  color: #030303;
+  box-shadow: 0 10px 30px 5px rgba(0, 0, 0, 0.2);
+  font-family: Impact;
+}
+
+.Purrloin img {
+  position: absolute;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0.9;
+  transition: opacity 0.2s ease-out;
+  background: rgb(115, 6, 129);
+}
+
+.Purrloin h2 {
+  position: absolute;
+  inset: auto auto 30px 30px;
+  margin: 0;
+  transition: inset 0.3s 0.3s ease-out;
+  font-family: "impact", sans-serif;
+  font-weight: normal;
+  text-transform: uppercase;
+  color: rgb(246, 247, 252);
+}
+
+.Purrloin p,
+.Purrloin a {
+  position: absolute;
+  opacity: 0;
+  max-width: 80%;
+  transition: opacity 0.3s ease-out;
+}
+
+.Purrloin p {
+  inset: auto auto 80px 30px;
+}
+
+.Purrloin a {
+  inset: auto auto 40px 30px;
+  color: inherit;
+  text-decoration: none;
+}
+
+.Purrloin:hover h2 {
+  inset: auto auto 220px 30px;
+  transition: inset 0.3s ease-out;
+}
+
+.Purrloin:hover p,
+.Purrloin:hover a {
+  opacity: 1;
+  transition: opacity 0.5s 0.1s ease-in;
+}
+
+.Purrloin:hover img {
+  transition: opacity 0.3s ease-in;
+  opacity: 1;
+}
+
+.Purrloin h2 {
+  vertical-align: middle;
+}
+
+
+
+
+
+
+.Lurantis  {
+  margin-left: 19px;
+  top: -4982px;
+}
+
+.Lurantis{
+  width: 20rem;
+  height: 25rem;
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: pointer;
+  position: relative;
+  color: #030303;
+  box-shadow: 0 10px 30px 5px rgba(0, 0, 0, 0.2);
+  font-family: Impact;
+}
+
+.Lurantis img {
+  position: absolute;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0.9;
+  transition: opacity 0.2s ease-out;
+  background: rgb(219, 117, 194);
+}
+
+.Lurantis h2 {
+  position: absolute;
+  inset: auto auto 30px 30px;
+  margin: 0;
+  transition: inset 0.3s 0.3s ease-out;
+  font-family: "impact", sans-serif;
+  font-weight: normal;
+  text-transform: uppercase;
+  color: rgb(246, 247, 252);
+}
+
+.Lurantis p,
+.Lurantis a {
+  position: absolute;
+  opacity: 0;
+  max-width: 80%;
+  transition: opacity 0.3s ease-out;
+}
+
+.Lurantis p {
+  inset: auto auto 80px 30px;
+}
+
+.Lurantis a {
+  inset: auto auto 40px 30px;
+  color: inherit;
+  text-decoration: none;
+}
+
+.Lurantis:hover h2 {
+  inset: auto auto 220px 30px;
+  transition: inset 0.3s ease-out;
+}
+
+.Lurantis:hover p,
+.Lurantis:hover a {
+  opacity: 1;
+  transition: opacity 0.5s 0.1s ease-in;
+}
+
+.Lurantis:hover img {
+  transition: opacity 0.3s ease-in;
+  opacity: 1;
+}
+
+.Lurantis h2 {
+  vertical-align: middle;
+}
+
+
+
+
+
+
+.Hoppip  {
+  margin-left: 19px;
+  top: -4975px;
+}
+
+.Hoppip{
+  width: 20rem;
+  height: 25rem;
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: pointer;
+  position: relative;
+  color: #030303;
+  box-shadow: 0 10px 30px 5px rgba(0, 0, 0, 0.2);
+  font-family: Impact;
+}
+
+.Hoppip img {
+  position: absolute;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0.9;
+  transition: opacity 0.2s ease-out;
+  background: rgb(216, 51, 175);
+}
+
+.Hoppip h2 {
+  position: absolute;
+  inset: auto auto 30px 30px;
+  margin: 0;
+  transition: inset 0.3s 0.3s ease-out;
+  font-family: "impact", sans-serif;
+  font-weight: normal;
+  text-transform: uppercase;
+  color: rgb(246, 247, 252);
+}
+
+.Hoppip p,
+.Hoppip a {
+  position: absolute;
+  opacity: 0;
+  max-width: 80%;
+  transition: opacity 0.3s ease-out;
+}
+
+.Hoppip p {
+  inset: auto auto 80px 30px;
+}
+
+.Hoppip a {
+  inset: auto auto 40px 30px;
+  color: inherit;
+  text-decoration: none;
+}
+
+.Hoppip:hover h2 {
+  inset: auto auto 220px 30px;
+  transition: inset 0.3s ease-out;
+}
+
+.Hoppip:hover p,
+.Hoppip:hover a {
+  opacity: 1;
+  transition: opacity 0.5s 0.1s ease-in;
+}
+
+.Hoppip:hover img {
+  transition: opacity 0.3s ease-in;
+  opacity: 1;
+}
+
+.Hoppip h2 {
+  vertical-align: middle;
+}
+
+
+
+
+
+
+.Eelektrik  {
+  margin-left: 19px;
+  top: -4965px;
+}
+
+.Eelektrik{
+  width: 20rem;
+  height: 25rem;
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: pointer;
+  position: relative;
+  color: #030303;
+  box-shadow: 0 10px 30px 5px rgba(0, 0, 0, 0.2);
+  font-family: Impact;
+}
+
+.Eelektrik img {
+  position: absolute;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0.9;
+  transition: opacity 0.2s ease-out;
+  background: rgb(71, 101, 182);
+}
+
+.Eelektrik h2 {
+  position: absolute;
+  inset: auto auto 30px 30px;
+  margin: 0;
+  transition: inset 0.3s 0.3s ease-out;
+  font-family: "impact", sans-serif;
+  font-weight: normal;
+  text-transform: uppercase;
+  color: rgb(246, 247, 252);
+}
+
+.Eelektrik p,
+.Eelektrik a {
+  position: absolute;
+  opacity: 0;
+  max-width: 80%;
+  transition: opacity 0.3s ease-out;
+}
+
+.Eelektrik p {
+  inset: auto auto 80px 30px;
+}
+
+.Eelektrik a {
+  inset: auto auto 40px 30px;
+  color: inherit;
+  text-decoration: none;
+}
+
+.Eelektrik:hover h2 {
+  inset: auto auto 220px 30px;
+  transition: inset 0.3s ease-out;
+}
+
+.Eelektrik:hover p,
+.Eelektrik:hover a {
+  opacity: 1;
+  transition: opacity 0.5s 0.1s ease-in;
+}
+
+.Eelektrik:hover img {
+  transition: opacity 0.3s ease-in;
+  opacity: 1;
+}
+
+.Eelektrik h2 {
+  vertical-align: middle;
+}
+
+
+
+
+
+
+
+.Stonjourner  {
+  margin-left: 19px;
+  top: -4957px;
+}
+
+.Stonjourner{
+  width: 20rem;
+  height: 25rem;
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: pointer;
+  position: relative;
+  color: #030303;
+  box-shadow: 0 10px 30px 5px rgba(0, 0, 0, 0.2);
+  font-family: Impact;
+}
+
+.Stonjourner img {
+  position: absolute;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0.9;
+  transition: opacity 0.2s ease-out;
+  background: rgb(64, 70, 85);
+}
+
+.Stonjourner h2 {
+  position: absolute;
+  inset: auto auto 30px 30px;
+  margin: 0;
+  transition: inset 0.3s 0.3s ease-out;
+  font-family: "impact", sans-serif;
+  font-weight: normal;
+  text-transform: uppercase;
+  color: rgb(246, 247, 252);
+}
+
+.Stonjourner p,
+.Stonjourner a {
+  position: absolute;
+  opacity: 0;
+  max-width: 80%;
+  transition: opacity 0.3s ease-out;
+}
+
+.Stonjourner p {
+  inset: auto auto 80px 30px;
+}
+
+.Stonjourner a {
+  inset: auto auto 40px 30px;
+  color: inherit;
+  text-decoration: none;
+}
+
+.Stonjourner:hover h2 {
+  inset: auto auto 220px 30px;
+  transition: inset 0.3s ease-out;
+}
+
+.Stonjourner:hover p,
+.Stonjourner:hover a {
+  opacity: 1;
+  transition: opacity 0.5s 0.1s ease-in;
+}
+
+.Stonjourner:hover img {
+  transition: opacity 0.3s ease-in;
+  opacity: 1;
+}
+
+.Stonjourner h2 {
+  vertical-align: middle;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.Axew   {
+  margin-left: 487px;
+  top: -8632px;
+}
+
+.Axew {
+  width: 20rem;
+  height: 25rem;
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: pointer;
+  position: relative;
+  color: #030303;
+  box-shadow: 0 10px 30px 5px rgba(0, 0, 0, 0.2);
+  font-family: Impact;
+}
+
+.Axew  img{
+  position: absolute;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0.9;
+  transition: opacity 0.2s ease-out;
+  background: rgb(73, 95, 84);
+}
+
+.Axew h2{
+  position: absolute;
+  inset: auto auto 30px 30px;
+  margin: 0;
+  transition: inset 0.3s 0.3s ease-out;
+  font-family: "impact", sans-serif;
+  font-weight: normal;
+  text-transform: uppercase;
+  color: rgb(246, 247, 252);
+}
+
+.Axew  p,
+.Axew  a {
+  position: absolute;
+  opacity: 0;
+  max-width: 80%;
+  transition: opacity 0.3s ease-out;
+}
+
+.Axew  p {
+  inset: auto auto 80px 30px;
+}
+
+.Axew  a {
+  inset: auto auto 40px 30px;
+  color: inherit;
+  text-decoration: none;
+}
+
+.Axew:hover h2 {
+  inset: auto auto 220px 30px;
+  transition: inset 0.3s ease-out;
+}
+
+.Axew:hover p,
+.Axew:hover a {
+  opacity: 1;
+  transition: opacity 0.5s 0.1s ease-in;
+}
+
+.Axew:hover img {
+  transition: opacity 0.3s ease-in;
+  opacity: 1;
+}
+
+.Axew  h2 {
+  vertical-align: middle;
+}
+
+
+
+
+.Mienfoo   {
+  margin-left: 487px;
+  top: -8625px;
+}
+
+.Mienfoo {
+  width: 20rem;
+  height: 25rem;
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: pointer;
+  position: relative;
+  color: #030303;
+  box-shadow: 0 10px 30px 5px rgba(0, 0, 0, 0.2);
+  font-family: Impact;
+}
+
+.Mienfoo  img{
+  position: absolute;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0.9;
+  transition: opacity 0.2s ease-out;
+  background: rgb(192, 190, 90);
+}
+
+.Mienfoo h2{
+  position: absolute;
+  inset: auto auto 30px 30px;
+  margin: 0;
+  transition: inset 0.3s 0.3s ease-out;
+  font-family: "impact", sans-serif;
+  font-weight: normal;
+  text-transform: uppercase;
+  color: rgb(246, 247, 252);
+}
+
+.Mienfoo  p,
+.Mienfoo  a {
+  position: absolute;
+  opacity: 0;
+  max-width: 80%;
+  transition: opacity 0.3s ease-out;
+}
+
+.Mienfoo  p {
+  inset: auto auto 80px 30px;
+}
+
+.Mienfoo  a {
+  inset: auto auto 40px 30px;
+  color: inherit;
+  text-decoration: none;
+}
+
+.Mienfoo:hover h2 {
+  inset: auto auto 220px 30px;
+  transition: inset 0.3s ease-out;
+}
+
+.Mienfoo:hover p,
+.Mienfoo:hover a {
+  opacity: 1;
+  transition: opacity 0.5s 0.1s ease-in;
+}
+
+.Mienfoo:hover img {
+  transition: opacity 0.3s ease-in;
+  opacity: 1;
+}
+
+.Mienfoo  h2 {
+  vertical-align: middle;
+}
+
+
+
+
+
+
+.Marowak   {
+  margin-left: 487px;
+  top: -8625px;
+}
+
+.Marowak {
+  width: 20rem;
+  height: 25rem;
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: pointer;
+  position: relative;
+  color: #030303;
+  box-shadow: 0 10px 30px 5px rgba(0, 0, 0, 0.2);
+  font-family: Impact;
+}
+
+.Marowak  img{
+  position: absolute;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0.9;
+  transition: opacity 0.2s ease-out;
+  background: rgb(192, 190, 90);
+}
+
+.Marowak h2{
+  position: absolute;
+  inset: auto auto 30px 30px;
+  margin: 0;
+  transition: inset 0.3s 0.3s ease-out;
+  font-family: "impact", sans-serif;
+  font-weight: normal;
+  text-transform: uppercase;
+  color: rgb(246, 247, 252);
+}
+
+.Marowak  p,
+.Marowak  a {
+  position: absolute;
+  opacity: 0;
+  max-width: 80%;
+  transition: opacity 0.3s ease-out;
+}
+
+.Marowak  p {
+  inset: auto auto 80px 30px;
+}
+
+.Marowak  a {
+  inset: auto auto 40px 30px;
+  color: inherit;
+  text-decoration: none;
+}
+
+.Marowak:hover h2 {
+  inset: auto auto 220px 30px;
+  transition: inset 0.3s ease-out;
+}
+
+.Marowak:hover p,
+.Marowak:hover a {
+  opacity: 1;
+  transition: opacity 0.5s 0.1s ease-in;
+}
+
+.Marowak:hover img {
+  transition: opacity 0.3s ease-in;
+  opacity: 1;
+}
+
+.Marowak  h2 {
+  vertical-align: middle;
+}
+
+
+
+
+.Gligar   {
+  margin-left: 487px;
+  top: -8615px;
+}
+
+.Gligar {
+  width: 20rem;
+  height: 25rem;
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: pointer;
+  position: relative;
+  color: #030303;
+  box-shadow: 0 10px 30px 5px rgba(0, 0, 0, 0.2);
+  font-family: Impact;
+}
+
+.Gligar  img{
+  position: absolute;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0.9;
+  transition: opacity 0.2s ease-out;
+  background: rgb(103, 36, 112);
+}
+
+.Gligar h2{
+  position: absolute;
+  inset: auto auto 30px 30px;
+  margin: 0;
+  transition: inset 0.3s 0.3s ease-out;
+  font-family: "impact", sans-serif;
+  font-weight: normal;
+  text-transform: uppercase;
+  color: rgb(246, 247, 252);
+}
+
+.Gligar  p,
+.Gligar  a {
+  position: absolute;
+  opacity: 0;
+  max-width: 80%;
+  transition: opacity 0.3s ease-out;
+}
+
+.Gligar  p {
+  inset: auto auto 80px 30px;
+}
+
+.Gligar  a {
+  inset: auto auto 40px 30px;
+  color: inherit;
+  text-decoration: none;
+}
+
+.Gligar:hover h2 {
+  inset: auto auto 220px 30px;
+  transition: inset 0.3s ease-out;
+}
+
+.Gligar:hover p,
+.Gligar:hover a {
+  opacity: 1;
+  transition: opacity 0.5s 0.1s ease-in;
+}
+
+.Gligar:hover img {
+  transition: opacity 0.3s ease-in;
+  opacity: 1;
+}
+
+.Gligar  h2 {
+  vertical-align: middle;
+}
+
+
+
+
+
+
+
+.Swellow   {
+  margin-left: 487px;
+  top: -8605px;
+}
+
+.Swellow {
+  width: 20rem;
+  height: 25rem;
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: pointer;
+  position: relative;
+  color: #030303;
+  box-shadow: 0 10px 30px 5px rgba(0, 0, 0, 0.2);
+  font-family: Impact;
+}
+
+.Swellow  img{
+  position: absolute;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0.9;
+  transition: opacity 0.2s ease-out;
+  background: rgb(39, 37, 39);
+}
+
+.Swellow h2{
+  position: absolute;
+  inset: auto auto 30px 30px;
+  margin: 0;
+  transition: inset 0.3s 0.3s ease-out;
+  font-family: "impact", sans-serif;
+  font-weight: normal;
+  text-transform: uppercase;
+  color: rgb(246, 247, 252);
+}
+
+.Swellow  p,
+.Swellow  a {
+  position: absolute;
+  opacity: 0;
+  max-width: 80%;
+  transition: opacity 0.3s ease-out;
+}
+
+.Swellow  p {
+  inset: auto auto 80px 30px;
+}
+
+.Swellow  a {
+  inset: auto auto 40px 30px;
+  color: inherit;
+  text-decoration: none;
+}
+
+.Swellow:hover h2 {
+  inset: auto auto 220px 30px;
+  transition: inset 0.3s ease-out;
+}
+
+.Swellow:hover p,
+.Swellow:hover a {
+  opacity: 1;
+  transition: opacity 0.5s 0.1s ease-in;
+}
+
+.Swellow:hover img {
+  transition: opacity 0.3s ease-in;
+  opacity: 1;
+}
+
+.Swellow  h2 {
+  vertical-align: middle;
+}
+
+
+
+
+
+
+
+.Simisear {
+  margin-left: 487px;
+  top: -8585px;
+}
+
+.Simisear {
+  width: 20rem;
+  height: 25rem;
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: pointer;
+  position: relative;
+  color: #030303;
+  box-shadow: 0 10px 30px 5px rgba(0, 0, 0, 0.2);
+  font-family: Impact;
+}
+
+.Simisear  img{
+  position: absolute;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0.9;
+  transition: opacity 0.2s ease-out;
+  background: rgb(170, 43, 39);
+}
+
+.Simisear h2{
+  position: absolute;
+  inset: auto auto 30px 30px;
+  margin: 0;
+  transition: inset 0.3s 0.3s ease-out;
+  font-family: "impact", sans-serif;
+  font-weight: normal;
+  text-transform: uppercase;
+  color: rgb(246, 247, 252);
+}
+
+.Simisear  p,
+.Simisear  a {
+  position: absolute;
+  opacity: 0;
+  max-width: 80%;
+  transition: opacity 0.3s ease-out;
+}
+
+.Simisear  p {
+  inset: auto auto 80px 30px;
+}
+
+.Simisear  a {
+  inset: auto auto 40px 30px;
+  color: inherit;
+  text-decoration: none;
+}
+
+.Simisear:hover h2 {
+  inset: auto auto 220px 30px;
+  transition: inset 0.3s ease-out;
+}
+
+.Simisear:hover p,
+.Simisear:hover a {
+  opacity: 1;
+  transition: opacity 0.5s 0.1s ease-in;
+}
+
+.Simisear:hover img {
+  transition: opacity 0.3s ease-in;
+  opacity: 1;
+}
+
+.Simisear  h2 {
+  vertical-align: middle;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.Magby {
+  margin-left: 487px;
+  top: -8594px;
+}
+
+.Magby {
+  width: 20rem;
+  height: 25rem;
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: pointer;
+  position: relative;
+  color: #030303;
+  box-shadow: 0 10px 30px 5px rgba(0, 0, 0, 0.2);
+  font-family: Impact;
+}
+
+.Magby  img{
+  position: absolute;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0.9;
+  transition: opacity 0.2s ease-out;
+  background: rgb(190, 70, 66);
+}
+
+.Magby h2{
+  position: absolute;
+  inset: auto auto 30px 30px;
+  margin: 0;
+  transition: inset 0.3s 0.3s ease-out;
+  font-family: "impact", sans-serif;
+  font-weight: normal;
+  text-transform: uppercase;
+  color: rgb(246, 247, 252);
+}
+
+.Magby  p,
+.Magby  a {
+  position: absolute;
+  opacity: 0;
+  max-width: 80%;
+  transition: opacity 0.3s ease-out;
+}
+
+.Magby  p {
+  inset: auto auto 80px 30px;
+}
+
+.Magby  a {
+  inset: auto auto 40px 30px;
+  color: inherit;
+  text-decoration: none;
+}
+
+.Magby:hover h2 {
+  inset: auto auto 220px 30px;
+  transition: inset 0.3s ease-out;
+}
+
+.Magby:hover p,
+.Magby:hover a {
+  opacity: 1;
+  transition: opacity 0.5s 0.1s ease-in;
+}
+
+.Magby:hover img {
+  transition: opacity 0.3s ease-in;
+  opacity: 1;
+}
+
+.Magby  h2 {
+  vertical-align: middle;
+}
+
+
+
+
+
+
+.Sawk {
+  margin-left: 487px;
+  top: -8580px;
+}
+
+.Sawk {
+  width: 20rem;
+  height: 25rem;
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: pointer;
+  position: relative;
+  color: #030303;
+  box-shadow: 0 10px 30px 5px rgba(0, 0, 0, 0.2);
+  font-family: Impact;
+}
+
+.Sawk  img{
+  position: absolute;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0.9;
+  transition: opacity 0.2s ease-out;
+  background: rgb(38, 26, 153);
+}
+
+.Sawk h2{
+  position: absolute;
+  inset: auto auto 30px 30px;
+  margin: 0;
+  transition: inset 0.3s 0.3s ease-out;
+  font-family: "impact", sans-serif;
+  font-weight: normal;
+  text-transform: uppercase;
+  color: rgb(246, 247, 252);
+}
+
+.Sawk  p,
+.Sawk  a {
+  position: absolute;
+  opacity: 0;
+  max-width: 80%;
+  transition: opacity 0.3s ease-out;
+}
+
+.Sawk  p {
+  inset: auto auto 80px 30px;
+}
+
+.Magby  a {
+  inset: auto auto 40px 30px;
+  color: inherit;
+  text-decoration: none;
+}
+
+.Sawk:hover h2 {
+  inset: auto auto 220px 30px;
+  transition: inset 0.3s ease-out;
+}
+
+.Sawk:hover p,
+.Sawk:hover a {
+  opacity: 1;
+  transition: opacity 0.5s 0.1s ease-in;
+}
+
+.Sawk:hover img {
+  transition: opacity 0.3s ease-in;
+  opacity: 1;
+}
+
+.Sawk  h2 {
+  vertical-align: middle;
+}
+
+
+
+
+
+
+
+.Pachirisu {
+  margin-left: 487px;
+  top: -8570px;
+}
+
+.Pachirisu {
+  width: 20rem;
+  height: 25rem;
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: pointer;
+  position: relative;
+  color: #030303;
+  box-shadow: 0 10px 30px 5px rgba(0, 0, 0, 0.2);
+  font-family: Impact;
+}
+
+.Pachirisu  img{
+  position: absolute;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0.9;
+  transition: opacity 0.2s ease-out;
+  background: rgb(228, 227, 236);
+}
+
+.Pachirisu h2{
+  position: absolute;
+  inset: auto auto 30px 30px;
+  margin: 0;
+  transition: inset 0.3s 0.3s ease-out;
+  font-family: "impact", sans-serif;
+  font-weight: normal;
+  text-transform: uppercase;
+  color: rgb(43, 73, 223);
+}
+
+.Pachirisu  p,
+.Pachirisu  a {
+  position: absolute;
+  opacity: 0;
+  max-width: 80%;
+  transition: opacity 0.3s ease-out;
+}
+
+.Pachirisu  p {
+  inset: auto auto 80px 30px;
+}
+
+.Pachirisu  a {
+  inset: auto auto 40px 30px;
+  color: inherit;
+  text-decoration: none;
+}
+
+.Pachirisu:hover h2 {
+  inset: auto auto 220px 30px;
+  transition: inset 0.3s ease-out;
+}
+
+.Pachirisu:hover p,
+.Pachirisu:hover a {
+  opacity: 1;
+  transition: opacity 0.5s 0.1s ease-in;
+}
+
+.Pachirisu:hover img {
+  transition: opacity 0.3s ease-in;
+  opacity: 1;
+}
+
+.Pachirisu  h2 {
+  vertical-align: middle;
+}
+
+
+
+
+
+
+
+
+.Genesect {
+  margin-left: 487px;
+  top: -8560px;
+}
+
+.Genesect {
+  width: 20rem;
+  height: 25rem;
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: pointer;
+  position: relative;
+  color: #030303;
+  box-shadow: 0 10px 30px 5px rgba(0, 0, 0, 0.2);
+  font-family: Impact;
+}
+
+.Genesect  img{
+  position: absolute;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0.9;
+  transition: opacity 0.2s ease-out;
+  background: rgb(65, 52, 94);
+}
+
+.Genesect h2{
+  position: absolute;
+  inset: auto auto 30px 30px;
+  margin: 0;
+  transition: inset 0.3s 0.3s ease-out;
+  font-family: "impact", sans-serif;
+  font-weight: normal;
+  text-transform: uppercase;
+  color: rgb(43, 73, 223);
+}
+
+.Genesect  p,
+.Genesect  a {
+  position: absolute;
+  opacity: 0;
+  max-width: 80%;
+  transition: opacity 0.3s ease-out;
+}
+
+.Genesect  p {
+  inset: auto auto 80px 30px;
+}
+
+.Genesect  a {
+  inset: auto auto 40px 30px;
+  color: inherit;
+  text-decoration: none;
+}
+
+.Genesect:hover h2 {
+  inset: auto auto 220px 30px;
+  transition: inset 0.3s ease-out;
+}
+
+.Genesect:hover p,
+.Genesect:hover a {
+  opacity: 1;
+  transition: opacity 0.5s 0.1s ease-in;
+}
+
+.Genesect:hover img {
+  transition: opacity 0.3s ease-in;
+  opacity: 1;
+}
+
+.Genesect  h2 {
+  vertical-align: middle;
+}
+
+
+
+
+
+
+
+
+.Kubfu {
+  margin-left: 922px;
+  top: -14280px;
+}
+
+.Kubfu {
+  width: 20rem;
+  height: 25rem;
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: pointer;
+  position: relative;
+  color: #030303;
+  box-shadow: 0 10px 30px 5px rgba(0, 0, 0, 0.2);
+  font-family: Impact;
+}
+
+.Kubfu  img{
+  position: absolute;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0.9;
+  transition: opacity 0.2s ease-out;
+  background: rgb(64, 60, 71);
+}
+
+.Kubfu h2{
+  position: absolute;
+  inset: auto auto 30px 30px;
+  margin: 0;
+  transition: inset 0.3s 0.3s ease-out;
+  font-family: "impact", sans-serif;
+  font-weight: normal;
+  text-transform: uppercase;
+  color: rgb(243, 243, 243);
+}
+
+.Kubfu  p,
+.Kubfu  a {
+  position: absolute;
+  opacity: 0;
+  max-width: 80%;
+  transition: opacity 0.3s ease-out;
+}
+
+.Kubfu  p {
+  inset: auto auto 80px 30px;
+}
+
+.Kubfu  a {
+  inset: auto auto 40px 30px;
+  color: inherit;
+  text-decoration: none;
+}
+
+.Kubfu:hover h2 {
+  inset: auto auto 220px 30px;
+  transition: inset 0.3s ease-out;
+}
+
+.Kubfu:hover p,
+.Kubfu:hover a {
+  opacity: 1;
+  transition: opacity 0.5s 0.1s ease-in;
+}
+
+.Kubfu:hover img {
+  transition: opacity 0.3s ease-in;
+  opacity: 1;
+}
+
+.Kubfu  h2 {
+  vertical-align: middle;
+}
+
+
+
+
+
+
+
+.Ampharos {
+  margin-left: 922px;
+  top: -14272px;
+}
+
+.Ampharos {
+  width: 20rem;
+  height: 25rem;
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: pointer;
+  position: relative;
+  color: #030303;
+  box-shadow: 0 10px 30px 5px rgba(0, 0, 0, 0.2);
+  font-family: Impact;
+}
+
+.Ampharos  img{
+  position: absolute;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0.9;
+  transition: opacity 0.2s ease-out;
+  background: rgb(251, 255, 0);
+}
+
+.Ampharos h2{
+  position: absolute;
+  inset: auto auto 30px 30px;
+  margin: 0;
+  transition: inset 0.3s 0.3s ease-out;
+  font-family: "impact", sans-serif;
+  font-weight: normal;
+  text-transform: uppercase;
+  color: rgb(0, 0, 0);
+}
+
+.Ampharos  p,
+.Ampharos  a {
+  position: absolute;
+  opacity: 0;
+  max-width: 80%;
+  transition: opacity 0.3s ease-out;
+}
+
+.Ampharos  p {
+  inset: auto auto 80px 30px;
+}
+
+.Ampharos  a {
+  inset: auto auto 40px 30px;
+  color: inherit;
+  text-decoration: none;
+}
+
+.Ampharos:hover h2 {
+  inset: auto auto 220px 30px;
+  transition: inset 0.3s ease-out;
+}
+
+.Ampharos:hover p,
+.Ampharos:hover a {
+  opacity: 1;
+  transition: opacity 0.5s 0.1s ease-in;
+}
+
+.Ampharos:hover img {
+  transition: opacity 0.3s ease-in;
+  opacity: 1;
+}
+
+.Ampharos  h2 {
+  vertical-align: middle;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.Swalot {
+  margin-left: 922px;
+  top: -14262px;
+}
+
+.Swalot {
+  width: 20rem;
+  height: 25rem;
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: pointer;
+  position: relative;
+  color: #030303;
+  box-shadow: 0 10px 30px 5px rgba(0, 0, 0, 0.2);
+  font-family: Impact;
+}
+
+.Swalot  img{
+  position: absolute;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0.9;
+  transition: opacity 0.2s ease-out;
+  background: rgb(141, 91, 151);
+}
+
+.Swalot h2{
+  position: absolute;
+  inset: auto auto 30px 30px;
+  margin: 0;
+  transition: inset 0.3s 0.3s ease-out;
+  font-family: "impact", sans-serif;
+  font-weight: normal;
+  text-transform: uppercase;
+  color: rgb(0, 0, 0);
+}
+
+.Swalot  p,
+.Swalot  a {
+  position: absolute;
+  opacity: 0;
+  max-width: 80%;
+  transition: opacity 0.3s ease-out;
+}
+
+.Swalot  p {
+  inset: auto auto 80px 30px;
+}
+
+.Swalot  a {
+  inset: auto auto 40px 30px;
+  color: inherit;
+  text-decoration: none;
+}
+
+.Swalot:hover h2 {
+  inset: auto auto 220px 30px;
+  transition: inset 0.3s ease-out;
+}
+
+.Swalot:hover p,
+.Swalot:hover a {
+  opacity: 1;
+  transition: opacity 0.5s 0.1s ease-in;
+}
+
+.Swalot:hover img {
+  transition: opacity 0.3s ease-in;
+  opacity: 1;
+}
+
+.Swalot  h2 {
+  vertical-align: middle;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.Swalot {
+  margin-left: 922px;
+  top: -14262px;
+}
+
+.Swalot {
+  width: 20rem;
+  height: 25rem;
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: pointer;
+  position: relative;
+  color: #030303;
+  box-shadow: 0 10px 30px 5px rgba(0, 0, 0, 0.2);
+  font-family: Impact;
+}
+
+.Swalot  img{
+  position: absolute;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0.9;
+  transition: opacity 0.2s ease-out;
+  background: rgb(141, 91, 151);
+}
+
+.Swalot h2{
+  position: absolute;
+  inset: auto auto 30px 30px;
+  margin: 0;
+  transition: inset 0.3s 0.3s ease-out;
+  font-family: "impact", sans-serif;
+  font-weight: normal;
+  text-transform: uppercase;
+  color: rgb(255, 255, 255);
+}
+
+.Swalot  p,
+.Swalot  a {
+  position: absolute;
+  opacity: 0;
+  max-width: 80%;
+  transition: opacity 0.3s ease-out;
+}
+
+.Swalot  p {
+  inset: auto auto 80px 30px;
+}
+
+.Swalot  a {
+  inset: auto auto 40px 30px;
+  color: inherit;
+  text-decoration: none;
+}
+
+.Swalot:hover h2 {
+  inset: auto auto 220px 30px;
+  transition: inset 0.3s ease-out;
+}
+
+.Swalot:hover p,
+.Swalot:hover a {
+  opacity: 1;
+  transition: opacity 0.5s 0.1s ease-in;
+}
+
+.Swalot:hover img {
+  transition: opacity 0.3s ease-in;
+  opacity: 1;
+}
+
+.Swalot  h2 {
+  vertical-align: middle;
+}
+
+
+
+
+
+
+
+
+
+
+
+.Tranquill {
+  margin-left: 922px;
+  top: -14252px;
+}
+
+.Tranquill {
+  width: 20rem;
+  height: 25rem;
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: pointer;
+  position: relative;
+  color: #030303;
+  box-shadow: 0 10px 30px 5px rgba(0, 0, 0, 0.2);
+  font-family: Impact;
+}
+
+.Tranquill  img{
+  position: absolute;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0.9;
+  transition: opacity 0.2s ease-out;
+  background: rgb(65, 58, 66);
+}
+
+.Tranquill h2{
+  position: absolute;
+  inset: auto auto 30px 30px;
+  margin: 0;
+  transition: inset 0.3s 0.3s ease-out;
+  font-family: "impact", sans-serif;
+  font-weight: normal;
+  text-transform: uppercase;
+  color: rgb(255, 255, 255);
+}
+
+.Tranquill  p,
+.Tranquill  a {
+  position: absolute;
+  opacity: 0;
+  max-width: 80%;
+  transition: opacity 0.3s ease-out;
+}
+
+.Tranquill  p {
+  inset: auto auto 80px 30px;
+}
+
+.Tranquill  a {
+  inset: auto auto 40px 30px;
+  color: inherit;
+  text-decoration: none;
+}
+
+.Tranquill:hover h2 {
+  inset: auto auto 220px 30px;
+  transition: inset 0.3s ease-out;
+}
+
+.Tranquill:hover p,
+.Tranquill:hover a {
+  opacity: 1;
+  transition: opacity 0.5s 0.1s ease-in;
+}
+
+.Tranquill:hover img {
+  transition: opacity 0.3s ease-in;
+  opacity: 1;
+}
+
+.Tranquill  h2 {
+  vertical-align: middle;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.Interleon {
+  margin-left: 922px;
+  top: -14240px;
+}
+
+.Interleon {
+  width: 20rem;
+  height: 25rem;
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: pointer;
+  position: relative;
+  color: #030303;
+  box-shadow: 0 10px 30px 5px rgba(0, 0, 0, 0.2);
+  font-family: Impact;
+}
+
+.Interleon  img{
+  position: absolute;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0.9;
+  transition: opacity 0.2s ease-out;
+  background: rgb(65, 58, 66);
+}
+
+.Interleon h2{
+  position: absolute;
+  inset: auto auto 30px 30px;
+  margin: 0;
+  transition: inset 0.3s 0.3s ease-out;
+  font-family: "impact", sans-serif;
+  font-weight: normal;
+  text-transform: uppercase;
+  color: rgb(255, 255, 255);
+}
+
+.Interleon  p,
+.Interleon  a {
+  position: absolute;
+  opacity: 0;
+  max-width: 80%;
+  transition: opacity 0.3s ease-out;
+}
+
+.Interleon  p {
+  inset: auto auto 80px 30px;
+}
+
+.Interleon  a {
+  inset: auto auto 40px 30px;
+  color: inherit;
+  text-decoration: none;
+}
+
+.Interleon:hover h2 {
+  inset: auto auto 220px 30px;
+  transition: inset 0.3s ease-out;
+}
+
+.Interleon:hover p,
+.Interleon:hover a {
+  opacity: 1;
+  transition: opacity 0.5s 0.1s ease-in;
+}
+
+.Interleon:hover img {
+  transition: opacity 0.3s ease-in;
+  opacity: 1;
+}
+
+.Interleon  h2 {
+  vertical-align: middle;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.Turtonator {
+  margin-left: 922px;
+  top: -14230px;
+}
+
+.Turtonator {
+  width: 20rem;
+  height: 25rem;
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: pointer;
+  position: relative;
+  color: #030303;
+  box-shadow: 0 10px 30px 5px rgba(0, 0, 0, 0.2);
+  font-family: Impact;
+}
+
+.Turtonator  img{
+  position: absolute;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0.9;
+  transition: opacity 0.2s ease-out;
+  background: rgb(150, 33, 33);
+}
+
+.Turtonator h2{
+  position: absolute;
+  inset: auto auto 30px 30px;
+  margin: 0;
+  transition: inset 0.3s 0.3s ease-out;
+  font-family: "impact", sans-serif;
+  font-weight: normal;
+  text-transform: uppercase;
+  color: rgb(255, 255, 255);
+}
+
+.Turtonator  p,
+.Turtonator  a {
+  position: absolute;
+  opacity: 0;
+  max-width: 80%;
+  transition: opacity 0.3s ease-out;
+}
+
+.Turtonator  p {
+  inset: auto auto 80px 30px;
+}
+
+.Turtonator  a {
+  inset: auto auto 40px 30px;
+  color: inherit;
+  text-decoration: none;
+}
+
+.Turtonator:hover h2 {
+  inset: auto auto 220px 30px;
+  transition: inset 0.3s ease-out;
+}
+
+.Turtonator:hover p,
+.Turtonator:hover a {
+  opacity: 1;
+  transition: opacity 0.5s 0.1s ease-in;
+}
+
+.Turtonator:hover img {
+  transition: opacity 0.3s ease-in;
+  opacity: 1;
+}
+
+.Turtonator  h2 {
+  vertical-align: middle;
+}
+
+
+
+
+
+
+
+
+
+.Trapinch {
+  margin-left: 922px;
+  top: -14230px;
+}
+
+.Trapinch {
+  width: 20rem;
+  height: 25rem;
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: pointer;
+  position: relative;
+  color: #030303;
+  box-shadow: 0 10px 30px 5px rgba(0, 0, 0, 0.2);
+  font-family: Impact;
+}
+
+.Trapinch  img{
+  position: absolute;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0.9;
+  transition: opacity 0.2s ease-out;
+  background: rgb(206, 75, 36);
+}
+
+.Trapinch h2{
+  position: absolute;
+  inset: auto auto 30px 30px;
+  margin: 0;
+  transition: inset 0.3s 0.3s ease-out;
+  font-family: "impact", sans-serif;
+  font-weight: normal;
+  text-transform: uppercase;
+  color: rgb(255, 255, 255);
+}
+
+.Trapinch  p,
+.Trapinch  a {
+  position: absolute;
+  opacity: 0;
+  max-width: 80%;
+  transition: opacity 0.3s ease-out;
+}
+
+.Trapinch  p {
+  inset: auto auto 80px 30px;
+}
+
+.Trapinch  a {
+  inset: auto auto 40px 30px;
+  color: inherit;
+  text-decoration: none;
+}
+
+.Trapinch:hover h2 {
+  inset: auto auto 220px 30px;
+  transition: inset 0.3s ease-out;
+}
+
+.Trapinch:hover p,
+.Trapinch:hover a {
+  opacity: 1;
+  transition: opacity 0.5s 0.1s ease-in;
+}
+
+.Trapinch:hover img {
+  transition: opacity 0.3s ease-in;
+  opacity: 1;
+}
+
+.Trapinch  h2 {
+  vertical-align: middle;
+}
+
+
+
+
+
+
+
+.Hoopa {
+  margin-left: 922px;
+  top: -14225px;
+}
+
+.Hoopa {
+  width: 20rem;
+  height: 25rem;
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: pointer;
+  position: relative;
+  color: #030303;
+  box-shadow: 0 10px 30px 5px rgba(0, 0, 0, 0.2);
+  font-family: Impact;
+}
+
+.Hoopa  img{
+  position: absolute;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0.9;
+  transition: opacity 0.2s ease-out;
+  background: rgb(138, 10, 69);
+}
+
+.Hoopa h2{
+  position: absolute;
+  inset: auto auto 30px 30px;
+  margin: 0;
+  transition: inset 0.3s 0.3s ease-out;
+  font-family: "impact", sans-serif;
+  font-weight: normal;
+  text-transform: uppercase;
+  color: rgb(255, 255, 255);
+}
+
+.Hoopa  p,
+.Hoopa  a {
+  position: absolute;
+  opacity: 0;
+  max-width: 80%;
+  transition: opacity 0.3s ease-out;
+}
+
+.Hoopa  p {
+  inset: auto auto 80px 30px;
+}
+
+.Hoopa  a {
+  inset: auto auto 40px 30px;
+  color: inherit;
+  text-decoration: none;
+}
+
+.Hoopa:hover h2 {
+  inset: auto auto 220px 30px;
+  transition: inset 0.3s ease-out;
+}
+
+.Hoopa:hover p,
+.Hoopa:hover a {
+  opacity: 1;
+  transition: opacity 0.5s 0.1s ease-in;
+}
+
+.Hoopa:hover img {
+  transition: opacity 0.3s ease-in;
+  opacity: 1;
+}
+
+.Hoopa  h2 {
+  vertical-align: middle;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.Spinda {
+  margin-left: 922px;
+  top: -14217px;
+}
+
+.Spinda {
+  width: 20rem;
+  height: 25rem;
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: pointer;
+  position: relative;
+  color: #030303;
+  box-shadow: 0 10px 30px 5px rgba(0, 0, 0, 0.2);
+  font-family: Impact;
+}
+
+.Spinda  img{
+  position: absolute;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0.9;
+  transition: opacity 0.2s ease-out;
+  background: rgb(211, 206, 158);
+}
+
+.Spinda h2{
+  position: absolute;
+  inset: auto auto 30px 30px;
+  margin: 0;
+  transition: inset 0.3s 0.3s ease-out;
+  font-family: "impact", sans-serif;
+  font-weight: normal;
+  text-transform: uppercase;
+  color: rgb(255, 255, 255);
+}
+
+.Spinda  p,
+.Spinda  a {
+  position: absolute;
+  opacity: 0;
+  max-width: 80%;
+  transition: opacity 0.3s ease-out;
+}
+
+.Spinda  p {
+  inset: auto auto 80px 30px;
+}
+
+.Spinda  a {
+  inset: auto auto 40px 30px;
+  color: inherit;
+  text-decoration: none;
+}
+
+.Spinda:hover h2 {
+  inset: auto auto 220px 30px;
+  transition: inset 0.3s ease-out;
+}
+
+.Spinda:hover p,
+.Spinda:hover a {
+  opacity: 1;
+  transition: opacity 0.5s 0.1s ease-in;
+}
+
+.Spinda:hover img {
+  transition: opacity 0.3s ease-in;
+  opacity: 1;
+}
+
+.Spinda  h2 {
+  vertical-align: middle;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.Milcery {
+  margin-left: 922px;
+  top: -14207px;
+}
+
+.Milcery {
+  width: 20rem;
+  height: 25rem;
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: pointer;
+  position: relative;
+  color: #030303;
+  box-shadow: 0 10px 30px 5px rgba(0, 0, 0, 0.2);
+  font-family: Impact;
+}
+
+.Milcery  img{
+  position: absolute;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0.9;
+  transition: opacity 0.2s ease-out;
+  background: rgb(211, 206, 158);
+}
+
+.Milcery h2{
+  position: absolute;
+  inset: auto auto 30px 30px;
+  margin: 0;
+  transition: inset 0.3s 0.3s ease-out;
+  font-family: "impact", sans-serif;
+  font-weight: normal;
+  text-transform: uppercase;
+  color: rgb(255, 255, 255);
+}
+
+.Milcery  p,
+.Milcery  a {
+  position: absolute;
+  opacity: 0;
+  max-width: 80%;
+  transition: opacity 0.3s ease-out;
+}
+
+.Milcery  p {
+  inset: auto auto 80px 30px;
+}
+
+.Milcery  a {
+  inset: auto auto 40px 30px;
+  color: inherit;
+  text-decoration: none;
+}
+
+.Milcery:hover h2 {
+  inset: auto auto 220px 30px;
+  transition: inset 0.3s ease-out;
+}
+
+.Milcery:hover p,
+.Milcery:hover a {
+  opacity: 1;
+  transition: opacity 0.5s 0.1s ease-in;
+}
+
+.Milcery:hover img {
+  transition: opacity 0.3s ease-in;
+  opacity: 1;
+}
+
+.Milcery  h2 {
+  vertical-align: middle;
+}
+
+
+
+
+
+
+
+
+
+.Lickitung {
+  margin-left: 922px;
+  top: -14198px;
+}
+
+.Lickitung {
+  width: 20rem;
+  height: 25rem;
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: pointer;
+  position: relative;
+  color: #030303;
+  box-shadow: 0 10px 30px 5px rgba(0, 0, 0, 0.2);
+  font-family: Impact;
+}
+
+.Lickitung  img{
+  position: absolute;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0.9;
+  transition: opacity 0.2s ease-out;
+  background: rgb(155, 106, 151);
+}
+
+.Lickitung h2{
+  position: absolute;
+  inset: auto auto 30px 30px;
+  margin: 0;
+  transition: inset 0.3s 0.3s ease-out;
+  font-family: "impact", sans-serif;
+  font-weight: normal;
+  text-transform: uppercase;
+  color: rgb(255, 255, 255);
+}
+
+.Lickitung  p,
+.Lickitung  a {
+  position: absolute;
+  opacity: 0;
+  max-width: 80%;
+  transition: opacity 0.3s ease-out;
+}
+
+.Lickitung  p {
+  inset: auto auto 80px 30px;
+}
+
+.Lickitung  a {
+  inset: auto auto 40px 30px;
+  color: inherit;
+  text-decoration: none;
+}
+
+.Lickitung:hover h2 {
+  inset: auto auto 220px 30px;
+  transition: inset 0.3s ease-out;
+}
+
+.Lickitung:hover p,
+.Lickitung:hover a {
+  opacity: 1;
+  transition: opacity 0.5s 0.1s ease-in;
+}
+
+.Lickitung:hover img {
+  transition: opacity 0.3s ease-in;
+  opacity: 1;
+}
+
+.Lickitung  h2 {
+  vertical-align: middle;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.Exeggcute {
+  margin-left: 922px;
+  top: -14190px;
+}
+
+.Exeggcute {
+  width: 20rem;
+  height: 25rem;
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: pointer;
+  position: relative;
+  color: #030303;
+  box-shadow: 0 10px 30px 5px rgba(0, 0, 0, 0.2);
+  font-family: Impact;
+}
+
+.Exeggcute  img{
+  position: absolute;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0.9;
+  transition: opacity 0.2s ease-out;
+  background: rgb(155, 106, 151);
+}
+
+.Exeggcute h2{
+  position: absolute;
+  inset: auto auto 30px 30px;
+  margin: 0;
+  transition: inset 0.3s 0.3s ease-out;
+  font-family: "impact", sans-serif;
+  font-weight: normal;
+  text-transform: uppercase;
+  color: rgb(255, 255, 255);
+}
+
+.Exeggcute  p,
+.Exeggcute  a {
+  position: absolute;
+  opacity: 0;
+  max-width: 80%;
+  transition: opacity 0.3s ease-out;
+}
+
+.Exeggcute  p {
+  inset: auto auto 80px 30px;
+}
+
+.Exeggcute  a {
+  inset: auto auto 40px 30px;
+  color: inherit;
+  text-decoration: none;
+}
+
+.Exeggcute:hover h2 {
+  inset: auto auto 220px 30px;
+  transition: inset 0.3s ease-out;
+}
+
+.Exeggcute:hover p,
+.Exeggcute:hover a {
+  opacity: 1;
+  transition: opacity 0.5s 0.1s ease-in;
+}
+
+.Exeggcute:hover img {
+  transition: opacity 0.3s ease-in;
+  opacity: 1;
+}
+
+.Exeggcute  h2 {
+  vertical-align: middle;
+}
+
+
+
+
+
+
+
+
+
+.Beedrill {
+  margin-left: 922px;
+  top: -14180px;
+}
+
+.Beedrill {
+  width: 20rem;
+  height: 25rem;
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: pointer;
+  position: relative;
+  color: #030303;
+  box-shadow: 0 10px 30px 5px rgba(0, 0, 0, 0.2);
+  font-family: Impact;
+}
+
+.Beedrill  img{
+  position: absolute;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0.9;
+  transition: opacity 0.2s ease-out;
+  background: rgb(155, 106, 151);
+}
+
+.Beedrill h2{
+  position: absolute;
+  inset: auto auto 30px 30px;
+  margin: 0;
+  transition: inset 0.3s 0.3s ease-out;
+  font-family: "impact", sans-serif;
+  font-weight: normal;
+  text-transform: uppercase;
+  color: rgb(255, 255, 255);
+}
+
+.Beedrill  p,
+.Beedrill  a {
+  position: absolute;
+  opacity: 0;
+  max-width: 80%;
+  transition: opacity 0.3s ease-out;
+}
+
+.Beedrill  p {
+  inset: auto auto 80px 30px;
+}
+
+.Beedrill  a {
+  inset: auto auto 40px 30px;
+  color: inherit;
+  text-decoration: none;
+}
+
+.Beedrill:hover h2 {
+  inset: auto auto 220px 30px;
+  transition: inset 0.3s ease-out;
+}
+
+.Beedrill:hover p,
+.Beedrill:hover a {
+  opacity: 1;
+  transition: opacity 0.5s 0.1s ease-in;
+}
+
+.Beedrill:hover img {
+  transition: opacity 0.3s ease-in;
+  opacity: 1;
+}
+
+.Beedrill  h2 {
+  vertical-align: middle;
+}
+
+
+
+
+
+
+
+
+
+
+
+.Maractus {
+  margin-left: 922px;
+  top: -14173px;
+}
+
+.Maractus {
+  width: 20rem;
+  height: 25rem;
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: pointer;
+  position: relative;
+  color: #030303;
+  box-shadow: 0 10px 30px 5px rgba(0, 0, 0, 0.2);
+  font-family: Impact;
+}
+
+.Maractus  img{
+  position: absolute;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0.9;
+  transition: opacity 0.2s ease-out;
+  background: rgb(19, 145, 40);
+}
+
+.Maractus h2{
+  position: absolute;
+  inset: auto auto 30px 30px;
+  margin: 0;
+  transition: inset 0.3s 0.3s ease-out;
+  font-family: "impact", sans-serif;
+  font-weight: normal;
+  text-transform: uppercase;
+  color: rgb(255, 255, 255);
+}
+
+.Maractus  p,
+.Maractus  a {
+  position: absolute;
+  opacity: 0;
+  max-width: 80%;
+  transition: opacity 0.3s ease-out;
+}
+
+.Maractus  p {
+  inset: auto auto 80px 30px;
+}
+
+.Maractus  a {
+  inset: auto auto 40px 30px;
+  color: inherit;
+  text-decoration: none;
+}
+
+.Maractus:hover h2 {
+  inset: auto auto 220px 30px;
+  transition: inset 0.3s ease-out;
+}
+
+.Maractus:hover p,
+.Maractus:hover a {
+  opacity: 1;
+  transition: opacity 0.5s 0.1s ease-in;
+}
+
+.Maractus:hover img {
+  transition: opacity 0.3s ease-in;
+  opacity: 1;
+}
+
+.Maractus  h2 {
+  vertical-align: middle;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.Togepi {
+  margin-left: 922px;
+  top: -14160px;
+}
+
+.Togepi {
+  width: 20rem;
+  height: 25rem;
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: pointer;
+  position: relative;
+  color: #030303;
+  box-shadow: 0 10px 30px 5px rgba(0, 0, 0, 0.2);
+  font-family: Impact;
+}
+
+.Togepi  img{
+  position: absolute;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0.9;
+  transition: opacity 0.2s ease-out;
+  background: rgb(211, 206, 158);
+}
+
+.Togepi h2{
+  position: absolute;
+  inset: auto auto 30px 30px;
+  margin: 0;
+  transition: inset 0.3s 0.3s ease-out;
+  font-family: "impact", sans-serif;
+  font-weight: normal;
+  text-transform: uppercase;
+  color: rgb(255, 255, 255);
+}
+
+.Togepi  p,
+.Togepi  a {
+  position: absolute;
+  opacity: 0;
+  max-width: 80%;
+  transition: opacity 0.3s ease-out;
+}
+
+.Togepi  p {
+  inset: auto auto 80px 30px;
+}
+
+.Togepi  a {
+  inset: auto auto 40px 30px;
+  color: inherit;
+  text-decoration: none;
+}
+
+.Togepi:hover h2 {
+  inset: auto auto 220px 30px;
+  transition: inset 0.3s ease-out;
+}
+
+.Togepi:hover p,
+.Togepi:hover a {
+  opacity: 1;
+  transition: opacity 0.5s 0.1s ease-in;
+}
+
+.Togepi:hover img {
+  transition: opacity 0.3s ease-in;
+  opacity: 1;
+}
+
+.Togepi  h2 {
+  vertical-align: middle;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.Finneon {
+  margin-left: 922px;
+  top: -14150px;
+}
+
+.Finneon {
+  width: 20rem;
+  height: 25rem;
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: pointer;
+  position: relative;
+  color: #030303;
+  box-shadow: 0 10px 30px 5px rgba(0, 0, 0, 0.2);
+  font-family: Impact;
+}
+
+.Finneon  img{
+  position: absolute;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0.9;
+  transition: opacity 0.2s ease-out;
+  background: rgb(26, 27, 29);
+}
+
+.Finneon h2{
+  position: absolute;
+  inset: auto auto 30px 30px;
+  margin: 0;
+  transition: inset 0.3s 0.3s ease-out;
+  font-family: "impact", sans-serif;
+  font-weight: normal;
+  text-transform: uppercase;
+  color: rgb(255, 255, 255);
+}
+
+.Finneon  p,
+.Finneon  a {
+  position: absolute;
+  opacity: 0;
+  max-width: 80%;
+  transition: opacity 0.3s ease-out;
+}
+
+.Finneon  p {
+  inset: auto auto 80px 30px;
+}
+
+.Finneon  a {
+  inset: auto auto 40px 30px;
+  color: inherit;
+  text-decoration: none;
+}
+
+.Finneon:hover h2 {
+  inset: auto auto 220px 30px;
+  transition: inset 0.3s ease-out;
+}
+
+.Finneon:hover p,
+.Finneon:hover a {
+  opacity: 1;
+  transition: opacity 0.5s 0.1s ease-in;
+}
+
+.Finneon:hover img {
+  transition: opacity 0.3s ease-in;
+  opacity: 1;
+}
+
+.Finneon  h2 {
+  vertical-align: middle;
+}
+
+
+
+
+
+
+
+
+
+
+
+.Toucannon {
+  margin-left: 922px;
+  top: -14140px;
+}
+
+.Toucannon {
+  width: 20rem;
+  height: 25rem;
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: pointer;
+  position: relative;
+  color: #030303;
+  box-shadow: 0 10px 30px 5px rgba(0, 0, 0, 0.2);
+  font-family: Impact;
+}
+
+.Toucannon  img{
+  position: absolute;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0.9;
+  transition: opacity 0.2s ease-out;
+  background: rgb(26, 27, 29);
+}
+
+.Toucannon h2{
+  position: absolute;
+  inset: auto auto 30px 30px;
+  margin: 0;
+  transition: inset 0.3s 0.3s ease-out;
+  font-family: "impact", sans-serif;
+  font-weight: normal;
+  text-transform: uppercase;
+  color: rgb(255, 255, 255);
+}
+
+.Toucannon  p,
+.Toucannon  a {
+  position: absolute;
+  opacity: 0;
+  max-width: 80%;
+  transition: opacity 0.3s ease-out;
+}
+
+.Toucannon  p {
+  inset: auto auto 80px 30px;
+}
+
+.Toucannon  a {
+  inset: auto auto 40px 30px;
+  color: inherit;
+  text-decoration: none;
+}
+
+.Finneon:hover h2 {
+  inset: auto auto 220px 30px;
+  transition: inset 0.3s ease-out;
+}
+
+.Toucannon:hover p,
+.Toucannon:hover a {
+  opacity: 1;
+  transition: opacity 0.5s 0.1s ease-in;
+}
+
+.Toucannon:hover img {
+  transition: opacity 0.3s ease-in;
+  opacity: 1;
+}
+
+.Toucannon  h2 {
+  vertical-align: middle;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.Rhyhorn {
+  margin-left: 922px;
+  top: -14130px;
+}
+
+.Rhyhorn {
+  width: 20rem;
+  height: 25rem;
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: pointer;
+  position: relative;
+  color: #030303;
+  box-shadow: 0 10px 30px 5px rgba(0, 0, 0, 0.2);
+  font-family: Impact;
+}
+
+.Rhyhorn  img{
+  position: absolute;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0.9;
+  transition: opacity 0.2s ease-out;
+  background: rgb(26, 27, 29);
+}
+
+.Rhyhorn h2{
+  position: absolute;
+  inset: auto auto 30px 30px;
+  margin: 0;
+  transition: inset 0.3s 0.3s ease-out;
+  font-family: "impact", sans-serif;
+  font-weight: normal;
+  text-transform: uppercase;
+  color: rgb(255, 255, 255);
+}
+
+.Rhyhorn  p,
+.Rhyhorn  a {
+  position: absolute;
+  opacity: 0;
+  max-width: 80%;
+  transition: opacity 0.3s ease-out;
+}
+
+.Rhyhorn  p {
+  inset: auto auto 80px 30px;
+}
+
+.Rhyhorn  a {
+  inset: auto auto 40px 30px;
+  color: inherit;
+  text-decoration: none;
+}
+
+.Rhyhorn:hover h2 {
+  inset: auto auto 220px 30px;
+  transition: inset 0.3s ease-out;
+}
+
+.Rhyhorn:hover p,
+.Rhyhorn:hover a {
+  opacity: 1;
+  transition: opacity 0.5s 0.1s ease-in;
+}
+
+.Rhyhorn:hover img {
+  transition: opacity 0.3s ease-in;
+  opacity: 1;
+}
+
+.Rhyhorn  h2 {
+  vertical-align: middle;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.TapuKoko {
+  margin-left: 922px;
+  top: -14120px;
+}
+
+.TapuKoko {
+  width: 20rem;
+  height: 25rem;
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: pointer;
+  position: relative;
+  color: #030303;
+  box-shadow: 0 10px 30px 5px rgba(0, 0, 0, 0.2);
+  font-family: Impact;
+}
+
+.TapuKoko  img{
+  position: absolute;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0.9;
+  transition: opacity 0.2s ease-out;
+  background: rgb(22, 109, 29);
+}
+
+.TapuKoko h2{
+  position: absolute;
+  inset: auto auto 30px 30px;
+  margin: 0;
+  transition: inset 0.3s 0.3s ease-out;
+  font-family: "impact", sans-serif;
+  font-weight: normal;
+  text-transform: uppercase;
+  color: rgb(255, 255, 255);
+}
+
+.TapuKoko  p,
+.TapuKoko  a {
+  position: absolute;
+  opacity: 0;
+  max-width: 80%;
+  transition: opacity 0.3s ease-out;
+}
+
+.TapuKoko  p {
+  inset: auto auto 80px 30px;
+}
+
+.TapuKoko  a {
+  inset: auto auto 40px 30px;
+  color: inherit;
+  text-decoration: none;
+}
+
+.TapuKoko:hover h2 {
+  inset: auto auto 220px 30px;
+  transition: inset 0.3s ease-out;
+}
+
+.TapuKoko:hover p,
+.TapuKoko:hover a {
+  opacity: 1;
+  transition: opacity 0.5s 0.1s ease-in;
+}
+
+.TapuKoko:hover img {
+  transition: opacity 0.3s ease-in;
+  opacity: 1;
+}
+
+.TapuKoko  h2 {
+  vertical-align: middle;
+}
+
+
+
+
+
+
+
+.Duraludon {
+  margin-left: 922px;
+  top: -14110px;
+}
+
+.Duraludon {
+  width: 20rem;
+  height: 25rem;
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: pointer;
+  position: relative;
+  color: #030303;
+  box-shadow: 0 10px 30px 5px rgba(0, 0, 0, 0.2);
+  font-family: Impact;
+}
+
+.Duraludon  img{
+  position: absolute;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0.9;
+  transition: opacity 0.2s ease-out;
+  background: rgb(53, 56, 61);
+}
+
+.Duraludon h2{
+  position: absolute;
+  inset: auto auto 30px 30px;
+  margin: 0;
+  transition: inset 0.3s 0.3s ease-out;
+  font-family: "impact", sans-serif;
+  font-weight: normal;
+  text-transform: uppercase;
+  color: rgb(255, 255, 255);
+}
+
+.Duraludon  p,
+.Duraludon  a {
+  position: absolute;
+  opacity: 0;
+  max-width: 80%;
+  transition: opacity 0.3s ease-out;
+}
+
+.Duraludon  p {
+  inset: auto auto 80px 30px;
+}
+
+.Duraludon  a {
+  inset: auto auto 40px 30px;
+  color: inherit;
+  text-decoration: none;
+}
+
+.Duraludon:hover h2 {
+  inset: auto auto 220px 30px;
+  transition: inset 0.3s ease-out;
+}
+
+.Duraludon:hover p,
+.Duraludon:hover a {
+  opacity: 1;
+  transition: opacity 0.5s 0.1s ease-in;
+}
+
+.Duraludon:hover img {
+  transition: opacity 0.3s ease-in;
+  opacity: 1;
+}
+
+.Duraludon  h2 {
+  vertical-align: middle;
+}
+
+
+
+
+
+
+
+
+
+
+.Bibarel {
+  margin-left: 922px;
+  top: -14100px;
+}
+
+.Bibarel {
+  width: 20rem;
+  height: 25rem;
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: pointer;
+  position: relative;
+  color: #030303;
+  box-shadow: 0 10px 30px 5px rgba(0, 0, 0, 0.2);
+  font-family: Impact;
+}
+
+.Bibarel  img{
+  position: absolute;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0.9;
+  transition: opacity 0.2s ease-out;
+  background: rgb(109, 49, 15);
+}
+
+.Bibarel h2{
+  position: absolute;
+  inset: auto auto 30px 30px;
+  margin: 0;
+  transition: inset 0.3s 0.3s ease-out;
+  font-family: "impact", sans-serif;
+  font-weight: normal;
+  text-transform: uppercase;
+  color: rgb(255, 255, 255);
+}
+
+.Bibarel  p,
+.Bibarel  a {
+  position: absolute;
+  opacity: 0;
+  max-width: 80%;
+  transition: opacity 0.3s ease-out;
+}
+
+.Bibarel  p {
+  inset: auto auto 80px 30px;
+}
+
+.Bibarel  a {
+  inset: auto auto 40px 30px;
+  color: inherit;
+  text-decoration: none;
+}
+
+.Bibarel:hover h2 {
+  inset: auto auto 220px 30px;
+  transition: inset 0.3s ease-out;
+}
+
+.Bibarel:hover p,
+.Bibarel:hover a {
+  opacity: 1;
+  transition: opacity 0.5s 0.1s ease-in;
+}
+
+.Bibarel:hover img {
+  transition: opacity 0.3s ease-in;
+  opacity: 1;
+}
+
+.Bibarel  h2 {
+  vertical-align: middle;
+}
+
+
+
+
+
+
+
+
+
+
+.Reuniclus {
+  margin-left: 922px;
+  top: -14090px;
+}
+
+.Reuniclus {
+  width: 20rem;
+  height: 25rem;
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: pointer;
+  position: relative;
+  color: #030303;
+  box-shadow: 0 10px 30px 5px rgba(0, 0, 0, 0.2);
+  font-family: Impact;
+}
+
+.Reuniclus  img{
+  position: absolute;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0.9;
+  transition: opacity 0.2s ease-out;
+  background: rgb(89, 173, 78);
+}
+
+.Reuniclus h2{
+  position: absolute;
+  inset: auto auto 30px 30px;
+  margin: 0;
+  transition: inset 0.3s 0.3s ease-out;
+  font-family: "impact", sans-serif;
+  font-weight: normal;
+  text-transform: uppercase;
+  color: rgb(255, 255, 255);
+}
+
+.Reuniclus  p,
+.Reuniclus  a {
+  position: absolute;
+  opacity: 0;
+  max-width: 80%;
+  transition: opacity 0.3s ease-out;
+}
+
+.Reuniclus  p {
+  inset: auto auto 80px 30px;
+}
+
+.Reuniclus  a {
+  inset: auto auto 40px 30px;
+  color: inherit;
+  text-decoration: none;
+}
+
+.Reuniclus:hover h2 {
+  inset: auto auto 220px 30px;
+  transition: inset 0.3s ease-out;
+}
+
+.Reuniclus:hover p,
+.Reuniclus:hover a {
+  opacity: 1;
+  transition: opacity 0.5s 0.1s ease-in;
+}
+
+.Reuniclus:hover img {
+  transition: opacity 0.3s ease-in;
+  opacity: 1;
+}
+
+.Reuniclus  h2 {
+  vertical-align: middle;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.Mudsdale {
+  margin-left: 922px;
+  top: -14080px;
+}
+
+.Mudsdale {
+  width: 20rem;
+  height: 25rem;
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: pointer;
+  position: relative;
+  color: #030303;
+  box-shadow: 0 10px 30px 5px rgba(0, 0, 0, 0.2);
+  font-family: Impact;
+}
+
+.Mudsdale  img{
+  position: absolute;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0.9;
+  transition: opacity 0.2s ease-out;
+  background: rgb(28, 34, 27);
+}
+
+.Mudsdale h2{
+  position: absolute;
+  inset: auto auto 30px 30px;
+  margin: 0;
+  transition: inset 0.3s 0.3s ease-out;
+  font-family: "impact", sans-serif;
+  font-weight: normal;
+  text-transform: uppercase;
+  color: rgb(255, 255, 255);
+}
+
+.Mudsdale  p,
+.Mudsdale  a {
+  position: absolute;
+  opacity: 0;
+  max-width: 80%;
+  transition: opacity 0.3s ease-out;
+}
+
+.Mudsdale  p {
+  inset: auto auto 80px 30px;
+}
+
+.Mudsdale  a {
+  inset: auto auto 40px 30px;
+  color: inherit;
+  text-decoration: none;
+}
+
+.Mudsdale:hover h2 {
+  inset: auto auto 220px 30px;
+  transition: inset 0.3s ease-out;
+}
+
+.Mudsdale:hover p,
+.Mudsdale:hover a {
+  opacity: 1;
+  transition: opacity 0.5s 0.1s ease-in;
+}
+
+.Mudsdale:hover img {
+  transition: opacity 0.3s ease-in;
+  opacity: 1;
+}
+
+.Mudsdale  h2 {
+  vertical-align: middle;
+}
+
+
+
+
+
+
+
+
+
+
+
+.Chewtle {
+  margin-left: 922px;
+  top: -14070px;
+}
+
+.Chewtle {
+  width: 20rem;
+  height: 25rem;
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: pointer;
+  position: relative;
+  color: #030303;
+  box-shadow: 0 10px 30px 5px rgba(0, 0, 0, 0.2);
+  font-family: Impact;
+}
+
+.Chewtle  img{
+  position: absolute;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0.9;
+  transition: opacity 0.2s ease-out;
+  background: rgb(117, 164, 182);
+}
+
+.Chewtle h2{
+  position: absolute;
+  inset: auto auto 30px 30px;
+  margin: 0;
+  transition: inset 0.3s 0.3s ease-out;
+  font-family: "impact", sans-serif;
+  font-weight: normal;
+  text-transform: uppercase;
+  color: rgb(255, 255, 255);
+}
+
+.Chewtle  p,
+.Chewtle  a {
+  position: absolute;
+  opacity: 0;
+  max-width: 80%;
+  transition: opacity 0.3s ease-out;
+}
+
+.Chewtle  p {
+  inset: auto auto 80px 30px;
+}
+
+.Chewtle  a {
+  inset: auto auto 40px 30px;
+  color: inherit;
+  text-decoration: none;
+}
+
+.Chewtle:hover h2 {
+  inset: auto auto 220px 30px;
+  transition: inset 0.3s ease-out;
+}
+
+.Chewtle:hover p,
+.Chewtle:hover a {
+  opacity: 1;
+  transition: opacity 0.5s 0.1s ease-in;
+}
+
+.Chewtle:hover img {
+  transition: opacity 0.3s ease-in;
+  opacity: 1;
+}
+
+.Chewtle  h2 {
+  vertical-align: middle;
+}
+
+
+
+
+
+
+
+
+
+
+.Swablu {
+  margin-left: 922px;
+  top: -14050px;
+}
+
+.Swablu {
+  width: 20rem;
+  height: 25rem;
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: pointer;
+  position: relative;
+  color: #030303;
+  box-shadow: 0 10px 30px 5px rgba(0, 0, 0, 0.2);
+  font-family: Impact;
+}
+
+.Swablu  img{
+  position: absolute;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0.9;
+  transition: opacity 0.2s ease-out;
+  background: rgb(117, 164, 182);
+}
+
+.Swablu h2{
+  position: absolute;
+  inset: auto auto 30px 30px;
+  margin: 0;
+  transition: inset 0.3s 0.3s ease-out;
+  font-family: "impact", sans-serif;
+  font-weight: normal;
+  text-transform: uppercase;
+  color: rgb(255, 255, 255);
+}
+
+.Swablu  p,
+.Swablu  a {
+  position: absolute;
+  opacity: 0;
+  max-width: 80%;
+  transition: opacity 0.3s ease-out;
+}
+
+.Swablu  p {
+  inset: auto auto 80px 30px;
+}
+
+.Swablu  a {
+  inset: auto auto 40px 30px;
+  color: inherit;
+  text-decoration: none;
+}
+
+.Swablu:hover h2 {
+  inset: auto auto 220px 30px;
+  transition: inset 0.3s ease-out;
+}
+
+.Swablu:hover p,
+.Swablu:hover a {
+  opacity: 1;
+  transition: opacity 0.5s 0.1s ease-in;
+}
+
+.Swablu:hover img {
+  transition: opacity 0.3s ease-in;
+  opacity: 1;
+}
+
+.Swablu  h2 {
+  vertical-align: middle;
+}
+
+
+
+
+
+
+
+
+
+
+
+.Unfezant {
+  margin-left: 922px;
+  top: -14030px;
+}
+
+.Unfezant {
+  width: 20rem;
+  height: 25rem;
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: pointer;
+  position: relative;
+  color: #030303;
+  box-shadow: 0 10px 30px 5px rgba(0, 0, 0, 0.2);
+  font-family: Impact;
+}
+
+.Unfezant  img{
+  position: absolute;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0.9;
+  transition: opacity 0.2s ease-out;
+  background: rgb(39, 43, 44);
+}
+
+.Unfezant h2{
+  position: absolute;
+  inset: auto auto 30px 30px;
+  margin: 0;
+  transition: inset 0.3s 0.3s ease-out;
+  font-family: "impact", sans-serif;
+  font-weight: normal;
+  text-transform: uppercase;
+  color: rgb(255, 255, 255);
+}
+
+.Unfezant  p,
+.Unfezant  a {
+  position: absolute;
+  opacity: 0;
+  max-width: 80%;
+  transition: opacity 0.3s ease-out;
+}
+
+.Unfezant  p {
+  inset: auto auto 80px 30px;
+}
+
+.Unfezant  a {
+  inset: auto auto 40px 30px;
+  color: inherit;
+  text-decoration: none;
+}
+
+.Unfezant:hover h2 {
+  inset: auto auto 220px 30px;
+  transition: inset 0.3s ease-out;
+}
+
+.Unfezant:hover p,
+.Unfezant:hover a {
+  opacity: 1;
+  transition: opacity 0.5s 0.1s ease-in;
+}
+
+.Unfezant:hover img {
+  transition: opacity 0.3s ease-in;
+  opacity: 1;
+}
+
+.Unfezant  h2 {
+  vertical-align: middle;
+}
+
+
+
+
+
+
+
+
+
+.Servine {
+  margin-left: 922px;
+  top: -14040px;
+}
+
+.Servine {
+  width: 20rem;
+  height: 25rem;
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: pointer;
+  position: relative;
+  color: #030303;
+  box-shadow: 0 10px 30px 5px rgba(0, 0, 0, 0.2);
+  font-family: Impact;
+}
+
+.Servine  img{
+  position: absolute;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0.9;
+  transition: opacity 0.2s ease-out;
+  background: rgb(89, 133, 49);
+}
+
+.Servine h2{
+  position: absolute;
+  inset: auto auto 30px 30px;
+  margin: 0;
+  transition: inset 0.3s 0.3s ease-out;
+  font-family: "impact", sans-serif;
+  font-weight: normal;
+  text-transform: uppercase;
+  color: rgb(255, 255, 255);
+}
+
+.Servine  p,
+.Servine  a {
+  position: absolute;
+  opacity: 0;
+  max-width: 80%;
+  transition: opacity 0.3s ease-out;
+}
+
+.Servine  p {
+  inset: auto auto 80px 30px;
+}
+
+.Servine  a {
+  inset: auto auto 40px 30px;
+  color: inherit;
+  text-decoration: none;
+}
+
+.Servine:hover h2 {
+  inset: auto auto 220px 30px;
+  transition: inset 0.3s ease-out;
+}
+
+.Servine:hover p,
+.Servine:hover a {
+  opacity: 1;
+  transition: opacity 0.5s 0.1s ease-in;
+}
+
+.Servine:hover img {
+  transition: opacity 0.3s ease-in;
+  opacity: 1;
+}
+
+.Servine  h2 {
+  vertical-align: middle;
+}
+
+
+
+
+
+
+
+
+
+
+.Empoleon {
+  margin-left: 922px;
+  top: -14020px;
+}
+
+.Empoleon {
+  width: 20rem;
+  height: 25rem;
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: pointer;
+  position: relative;
+  color: #030303;
+  box-shadow: 0 10px 30px 5px rgba(0, 0, 0, 0.2);
+  font-family: Impact;
+}
+
+.Empoleon  img{
+  position: absolute;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0.9;
+  transition: opacity 0.2s ease-out;
+  background: rgb(31, 34, 29);
+}
+
+.Empoleon h2{
+  position: absolute;
+  inset: auto auto 30px 30px;
+  margin: 0;
+  transition: inset 0.3s 0.3s ease-out;
+  font-family: "impact", sans-serif;
+  font-weight: normal;
+  text-transform: uppercase;
+  color: rgb(255, 255, 255);
+}
+
+.Empoleon  p,
+.Empoleon  a {
+  position: absolute;
+  opacity: 0;
+  max-width: 80%;
+  transition: opacity 0.3s ease-out;
+}
+
+.Empoleon  p {
+  inset: auto auto 80px 30px;
+}
+
+.Empoleon  a {
+  inset: auto auto 40px 30px;
+  color: inherit;
+  text-decoration: none;
+}
+
+.Empoleon:hover h2 {
+  inset: auto auto 220px 30px;
+  transition: inset 0.3s ease-out;
+}
+
+.Empoleon:hover p,
+.Empoleon:hover a {
+  opacity: 1;
+  transition: opacity 0.5s 0.1s ease-in;
+}
+
+.Empoleon:hover img {
+  transition: opacity 0.3s ease-in;
+  opacity: 1;
+}
+
+.Empoleon  h2 {
+  vertical-align: middle;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.Donphan {
+  margin-left: 922px;
+  top: -14010px;
+}
+
+.Donphan {
+  width: 20rem;
+  height: 25rem;
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: pointer;
+  position: relative;
+  color: #030303;
+  box-shadow: 0 10px 30px 5px rgba(0, 0, 0, 0.2);
+  font-family: Impact;
+}
+
+.Donphan  img{
+  position: absolute;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0.9;
+  transition: opacity 0.2s ease-out;
+  background: rgb(55, 58, 53);
+}
+
+.Donphan h2{
+  position: absolute;
+  inset: auto auto 30px 30px;
+  margin: 0;
+  transition: inset 0.3s 0.3s ease-out;
+  font-family: "impact", sans-serif;
+  font-weight: normal;
+  text-transform: uppercase;
+  color: rgb(255, 255, 255);
+}
+
+.Donphan  p,
+.Donphan  a {
+  position: absolute;
+  opacity: 0;
+  max-width: 80%;
+  transition: opacity 0.3s ease-out;
+}
+
+.Donphan  p {
+  inset: auto auto 80px 30px;
+}
+
+.Donphan  a {
+  inset: auto auto 40px 30px;
+  color: inherit;
+  text-decoration: none;
+}
+
+.Donphan:hover h2 {
+  inset: auto auto 220px 30px;
+  transition: inset 0.3s ease-out;
+}
+
+.Donphan:hover p,
+.Donphan:hover a {
+  opacity: 1;
+  transition: opacity 0.5s 0.1s ease-in;
+}
+
+.Donphan:hover img {
+  transition: opacity 0.3s ease-in;
+  opacity: 1;
+}
+
+.Donphan  h2 {
+  vertical-align: middle;
+}
+
+
+
+
+
+
+
+
+
+
+.Vanillish {
+  margin-left: 922px;
+  top: -14000px;
+}
+
+.Vanillish {
+  width: 20rem;
+  height: 25rem;
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: pointer;
+  position: relative;
+  color: #030303;
+  box-shadow: 0 10px 30px 5px rgba(0, 0, 0, 0.2);
+  font-family: Impact;
+}
+
+.Vanillish  img{
+  position: absolute;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0.9;
+  transition: opacity 0.2s ease-out;
+  background: rgb(107, 157, 170);
+}
+
+.Vanillish h2{
+  position: absolute;
+  inset: auto auto 30px 30px;
+  margin: 0;
+  transition: inset 0.3s 0.3s ease-out;
+  font-family: "impact", sans-serif;
+  font-weight: normal;
+  text-transform: uppercase;
+  color: rgb(255, 255, 255);
+}
+
+.Vanillish  p,
+.Vanillish  a {
+  position: absolute;
+  opacity: 0;
+  max-width: 80%;
+  transition: opacity 0.3s ease-out;
+}
+
+.Vanillish  p {
+  inset: auto auto 80px 30px;
+}
+
+.Vanillish  a {
+  inset: auto auto 40px 30px;
+  color: inherit;
+  text-decoration: none;
+}
+
+.Vanillish:hover h2 {
+  inset: auto auto 220px 30px;
+  transition: inset 0.3s ease-out;
+}
+
+.Vanillish:hover p,
+.Vanillish:hover a {
+  opacity: 1;
+  transition: opacity 0.5s 0.1s ease-in;
+}
+
+.Vanillish:hover img {
+  transition: opacity 0.3s ease-in;
+  opacity: 1;
+}
+
+.Vanillish  h2 {
+  vertical-align: middle;
+}
+
+
+
+
+
+.Burmy {
+  margin-left: 922px;
+  top: -13990px;
+}
+
+.Burmy {
+  width: 20rem;
+  height: 25rem;
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: pointer;
+  position: relative;
+  color: #030303;
+  box-shadow: 0 10px 30px 5px rgba(0, 0, 0, 0.2);
+  font-family: Impact;
+}
+
+.Burmy  img{
+  position: absolute;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0.9;
+  transition: opacity 0.2s ease-out;
+  background: rgb(156, 63, 79);
+}
+
+.Burmy h2{
+  position: absolute;
+  inset: auto auto 30px 30px;
+  margin: 0;
+  transition: inset 0.3s 0.3s ease-out;
+  font-family: "impact", sans-serif;
+  font-weight: normal;
+  text-transform: uppercase;
+  color: rgb(255, 255, 255);
+}
+
+.Burmy  p,
+.Burmy  a {
+  position: absolute;
+  opacity: 0;
+  max-width: 80%;
+  transition: opacity 0.3s ease-out;
+}
+
+.Burmy  p {
+  inset: auto auto 80px 30px;
+}
+
+.Burmy  a {
+  inset: auto auto 40px 30px;
+  color: inherit;
+  text-decoration: none;
+}
+
+.Burmy:hover h2 {
+  inset: auto auto 220px 30px;
+  transition: inset 0.3s ease-out;
+}
+
+.Burmy:hover p,
+.Burmy:hover a {
+  opacity: 1;
+  transition: opacity 0.5s 0.1s ease-in;
+}
+
+.Burmy:hover img {
+  transition: opacity 0.3s ease-in;
+  opacity: 1;
+}
+
+.Burmy  h2 {
+  vertical-align: middle;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.Obstagoon {
+  margin-left: 487px;
+  top: -20550px;
+}
+
+.Obstagoon {
+  width: 20rem;
+  height: 25rem;
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: pointer;
+  position: relative;
+  color: #030303;
+  box-shadow: 0 10px 30px 5px rgba(0, 0, 0, 0.2);
+  font-family: Impact;
+}
+
+.Obstagoon  img{
+  position: absolute;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0.9;
+  transition: opacity 0.2s ease-out;
+  background: rgb(65, 52, 94);
+}
+
+.Obstagoon h2{
+  position: absolute;
+  inset: auto auto 30px 30px;
+  margin: 0;
+  transition: inset 0.3s 0.3s ease-out;
+  font-family: "impact", sans-serif;
+  font-weight: normal;
+  text-transform: uppercase;
+  color: rgb(43, 73, 223);
+}
+
+.Obstagoon  p,
+.Obstagoon  a {
+  position: absolute;
+  opacity: 0;
+  max-width: 80%;
+  transition: opacity 0.3s ease-out;
+}
+
+.Obstagoon  p {
+  inset: auto auto 80px 30px;
+}
+
+.Obstagoon  a {
+  inset: auto auto 40px 30px;
+  color: inherit;
+  text-decoration: none;
+}
+
+.Obstagoon:hover h2 {
+  inset: auto auto 220px 30px;
+  transition: inset 0.3s ease-out;
+}
+
+.Obstagoon:hover p,
+.Obstagoon:hover a {
+  opacity: 1;
+  transition: opacity 0.5s 0.1s ease-in;
+}
+
+.Obstagoon:hover img {
+  transition: opacity 0.3s ease-in;
+  opacity: 1;
+}
+
+.Obstagoon  h2 {
+  vertical-align: middle;
+}
+
+
+
+
+
+
+
+
+
+.Solosis {
+  margin-left: 487px;
+  top: -20540px;
+}
+
+.Solosis {
+  width: 20rem;
+  height: 25rem;
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: pointer;
+  position: relative;
+  color: #030303;
+  box-shadow: 0 10px 30px 5px rgba(0, 0, 0, 0.2);
+  font-family: Impact;
+}
+
+.Solosis  img{
+  position: absolute;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0.9;
+  transition: opacity 0.2s ease-out;
+  background: rgb(52, 94, 66);
+}
+
+.Solosis h2{
+  position: absolute;
+  inset: auto auto 30px 30px;
+  margin: 0;
+  transition: inset 0.3s 0.3s ease-out;
+  font-family: "impact", sans-serif;
+  font-weight: normal;
+  text-transform: uppercase;
+  color: rgb(43, 73, 223);
+}
+
+.Solosis  p,
+.Solosis  a {
+  position: absolute;
+  opacity: 0;
+  max-width: 80%;
+  transition: opacity 0.3s ease-out;
+}
+
+.Solosis  p {
+  inset: auto auto 80px 30px;
+}
+
+.Solosis  a {
+  inset: auto auto 40px 30px;
+  color: inherit;
+  text-decoration: none;
+}
+
+.Solosis:hover h2 {
+  inset: auto auto 220px 30px;
+  transition: inset 0.3s ease-out;
+}
+
+.Solosis:hover p,
+.Solosis:hover a {
+  opacity: 1;
+  transition: opacity 0.5s 0.1s ease-in;
+}
+
+.Solosis:hover img {
+  transition: opacity 0.3s ease-in;
+  opacity: 1;
+}
+
+.Solosis  h2 {
+  vertical-align: middle;
+}
+
+
+
+
+
+
+
+.Sirfetchd {
+  margin-left: 487px;
+  top: -20530px;
+}
+
+.Sirfetchd {
+  width: 20rem;
+  height: 25rem;
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: pointer;
+  position: relative;
+  color: #030303;
+  box-shadow: 0 10px 30px 5px rgba(0, 0, 0, 0.2);
+  font-family: Impact;
+}
+
+.Sirfetchd  img{
+  position: absolute;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0.9;
+  transition: opacity 0.2s ease-out;
+  background: rgb(52, 94, 66);
+}
+
+.Sirfetchd h2{
+  position: absolute;
+  inset: auto auto 30px 30px;
+  margin: 0;
+  transition: inset 0.3s 0.3s ease-out;
+  font-family: "impact", sans-serif;
+  font-weight: normal;
+  text-transform: uppercase;
+  color: rgb(43, 73, 223);
+}
+
+.Sirfetchd  p,
+.Sirfetchd  a {
+  position: absolute;
+  opacity: 0;
+  max-width: 80%;
+  transition: opacity 0.3s ease-out;
+}
+
+.Sirfetchd  p {
+  inset: auto auto 80px 30px;
+}
+
+.Sirfetchd  a {
+  inset: auto auto 40px 30px;
+  color: inherit;
+  text-decoration: none;
+}
+
+.Sirfetchd:hover h2 {
+  inset: auto auto 220px 30px;
+  transition: inset 0.3s ease-out;
+}
+
+.Sirfetchd:hover p,
+.Sirfetchd:hover a {
+  opacity: 1;
+  transition: opacity 0.5s 0.1s ease-in;
+}
+
+.Sirfetchd:hover img {
+  transition: opacity 0.3s ease-in;
+  opacity: 1;
+}
+
+.Sirfetchd  h2 {
+  vertical-align: middle;
+}
+
+
+
+
+
+
+
+
+.Passimian {
+  margin-left: 487px;
+  top: -20520px;
+}
+
+.Passimian {
+  width: 20rem;
+  height: 25rem;
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: pointer;
+  position: relative;
+  color: #030303;
+  box-shadow: 0 10px 30px 5px rgba(0, 0, 0, 0.2);
+  font-family: Impact;
+}
+
+.Passimian  img{
+  position: absolute;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0.9;
+  transition: opacity 0.2s ease-out;
+  background: rgb(255, 255, 255);
+}
+
+.Passimian h2{
+  position: absolute;
+  inset: auto auto 30px 30px;
+  margin: 0;
+  transition: inset 0.3s 0.3s ease-out;
+  font-family: "impact", sans-serif;
+  font-weight: normal;
+  text-transform: uppercase;
+  color: rgb(43, 73, 223);
+}
+
+.Passimian  p,
+.Passimian  a {
+  position: absolute;
+  opacity: 0;
+  max-width: 80%;
+  transition: opacity 0.3s ease-out;
+}
+
+.Passimian  p {
+  inset: auto auto 80px 30px;
+}
+
+.Passimian  a {
+  inset: auto auto 40px 30px;
+  color: inherit;
+  text-decoration: none;
+}
+
+.Passimian:hover h2 {
+  inset: auto auto 220px 30px;
+  transition: inset 0.3s ease-out;
+}
+
+.Passimian:hover p,
+.Passimian:hover a {
+  opacity: 1;
+  transition: opacity 0.5s 0.1s ease-in;
+}
+
+.Passimian:hover img {
+  transition: opacity 0.3s ease-in;
+  opacity: 1;
+}
+
+.Passimian  h2 {
+  vertical-align: middle;
+}
+
+
+
+
+
+
+
+
+
+
+.Chandelure {
+  margin-left: 487px;
+  top: -20510px;
+}
+
+.Chandelure {
+  width: 20rem;
+  height: 25rem;
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: pointer;
+  position: relative;
+  color: #030303;
+  box-shadow: 0 10px 30px 5px rgba(0, 0, 0, 0.2);
+  font-family: Impact;
+}
+
+.Chandelure  img{
+  position: absolute;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0.9;
+  transition: opacity 0.2s ease-out;
+  background: rgb(100, 107, 212);
+}
+
+.Chandelure h2{
+  position: absolute;
+  inset: auto auto 30px 30px;
+  margin: 0;
+  transition: inset 0.3s 0.3s ease-out;
+  font-family: "impact", sans-serif;
+  font-weight: normal;
+  text-transform: uppercase;
+  color: rgb(43, 73, 223);
+}
+
+.Chandelure  p,
+.Chandelure  a {
+  position: absolute;
+  opacity: 0;
+  max-width: 80%;
+  transition: opacity 0.3s ease-out;
+}
+
+.Chandelure  p {
+  inset: auto auto 80px 30px;
+}
+
+.Chandelure  a {
+  inset: auto auto 40px 30px;
+  color: inherit;
+  text-decoration: none;
+}
+
+.Chandelure:hover h2 {
+  inset: auto auto 220px 30px;
+  transition: inset 0.3s ease-out;
+}
+
+.Chandelure:hover p,
+.Chandelure:hover a {
+  opacity: 1;
+  transition: opacity 0.5s 0.1s ease-in;
+}
+
+.Chandelure:hover img {
+  transition: opacity 0.3s ease-in;
+  opacity: 1;
+}
+
+.Chandelure  h2 {
+  vertical-align: middle;
+}
+
+
+
+
+
+
+
+
+.Mismagius {
+  margin-left: 487px;
+  top: -20500px;
+}
+
+.Mismagius {
+  width: 20rem;
+  height: 25rem;
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: pointer;
+  position: relative;
+  color: #030303;
+  box-shadow: 0 10px 30px 5px rgba(0, 0, 0, 0.2);
+  font-family: Impact;
+}
+
+.Mismagius  img{
+  position: absolute;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0.9;
+  transition: opacity 0.2s ease-out;
+  background: rgb(135, 44, 163);
+}
+
+.Mismagius h2{
+  position: absolute;
+  inset: auto auto 30px 30px;
+  margin: 0;
+  transition: inset 0.3s 0.3s ease-out;
+  font-family: "impact", sans-serif;
+  font-weight: normal;
+  text-transform: uppercase;
+  color: rgb(43, 73, 223);
+}
+
+.Mismagius  p,
+.Mismagius  a {
+  position: absolute;
+  opacity: 0;
+  max-width: 80%;
+  transition: opacity 0.3s ease-out;
+}
+
+.Mismagius  p {
+  inset: auto auto 80px 30px;
+}
+
+.Mismagius  a {
+  inset: auto auto 40px 30px;
+  color: inherit;
+  text-decoration: none;
+}
+
+.Mismagius:hover h2 {
+  inset: auto auto 220px 30px;
+  transition: inset 0.3s ease-out;
+}
+
+.Mismagius:hover p,
+.Mismagius:hover a {
+  opacity: 1;
+  transition: opacity 0.5s 0.1s ease-in;
+}
+
+.Mismagius:hover img {
+  transition: opacity 0.3s ease-in;
+  opacity: 1;
+}
+
+.Mismagius  h2 {
+  vertical-align: middle;
+}
+
+
+
+.Mismagius {
+  margin-left: 487px;
+  top: -20500px;
+}
+
+.Mismagius {
+  width: 20rem;
+  height: 25rem;
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: pointer;
+  position: relative;
+  color: #030303;
+  box-shadow: 0 10px 30px 5px rgba(0, 0, 0, 0.2);
+  font-family: Impact;
+}
+
+.Mismagius  img{
+  position: absolute;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0.9;
+  transition: opacity 0.2s ease-out;
+  background: rgb(135, 44, 163);
+}
+
+.Mismagius h2{
+  position: absolute;
+  inset: auto auto 30px 30px;
+  margin: 0;
+  transition: inset 0.3s 0.3s ease-out;
+  font-family: "impact", sans-serif;
+  font-weight: normal;
+  text-transform: uppercase;
+  color: rgb(43, 73, 223);
+}
+
+.Mismagius  p,
+.Mismagius  a {
+  position: absolute;
+  opacity: 0;
+  max-width: 80%;
+  transition: opacity 0.3s ease-out;
+}
+
+.Mismagius  p {
+  inset: auto auto 80px 30px;
+}
+
+.Mismagius  a {
+  inset: auto auto 40px 30px;
+  color: inherit;
+  text-decoration: none;
+}
+
+.Mismagius:hover h2 {
+  inset: auto auto 220px 30px;
+  transition: inset 0.3s ease-out;
+}
+
+.Mismagius:hover p,
+.Mismagius:hover a {
+  opacity: 1;
+  transition: opacity 0.5s 0.1s ease-in;
+}
+
+.Mismagius:hover img {
+  transition: opacity 0.3s ease-in;
+  opacity: 1;
+}
+
+.Mismagius  h2 {
+  vertical-align: middle;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.Masquerain {
+  margin-left: 487px;
+  top: -20490px;
+}
+
+.Masquerain {
+  width: 20rem;
+  height: 25rem;
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: pointer;
+  position: relative;
+  color: #030303;
+  box-shadow: 0 10px 30px 5px rgba(0, 0, 0, 0.2);
+  font-family: Impact;
+}
+
+.Masquerain  img{
+  position: absolute;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0.9;
+  transition: opacity 0.2s ease-out;
+  background: rgb(255, 255, 255);
+}
+
+.Masquerain h2{
+  position: absolute;
+  inset: auto auto 30px 30px;
+  margin: 0;
+  transition: inset 0.3s 0.3s ease-out;
+  font-family: "impact", sans-serif;
+  font-weight: normal;
+  text-transform: uppercase;
+  color: rgb(43, 73, 223);
+}
+
+.Masquerain  p,
+.Masquerain  a {
+  position: absolute;
+  opacity: 0;
+  max-width: 80%;
+  transition: opacity 0.3s ease-out;
+}
+
+.Masquerain  p {
+  inset: auto auto 80px 30px;
+}
+
+.Masquerain  a {
+  inset: auto auto 40px 30px;
+  color: inherit;
+  text-decoration: none;
+}
+
+.Masquerain:hover h2 {
+  inset: auto auto 220px 30px;
+  transition: inset 0.3s ease-out;
+}
+
+.Masquerain:hover p,
+.Masquerain:hover a {
+  opacity: 1;
+  transition: opacity 0.5s 0.1s ease-in;
+}
+
+.Masquerain:hover img {
+  transition: opacity 0.3s ease-in;
+  opacity: 1;
+}
+
+.Masquerain  h2 {
+  vertical-align: middle;
+}
+
+
+
+
+
+
+
+
+
+
+
+.Skiploom {
+  margin-left: 487px;
+  top: -20480px;
+}
+
+.Skiploom {
+  width: 20rem;
+  height: 25rem;
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: pointer;
+  position: relative;
+  color: #030303;
+  box-shadow: 0 10px 30px 5px rgba(0, 0, 0, 0.2);
+  font-family: Impact;
+}
+
+.Skiploom  img{
+  position: absolute;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0.9;
+  transition: opacity 0.2s ease-out;
+  background: rgb(37, 145, 55);
+}
+
+.Skiploom h2{
+  position: absolute;
+  inset: auto auto 30px 30px;
+  margin: 0;
+  transition: inset 0.3s 0.3s ease-out;
+  font-family: "impact", sans-serif;
+  font-weight: normal;
+  text-transform: uppercase;
+  color: rgb(43, 73, 223);
+}
+
+.Skiploom  p,
+.Skiploom  a {
+  position: absolute;
+  opacity: 0;
+  max-width: 80%;
+  transition: opacity 0.3s ease-out;
+}
+
+.Skiploom  p {
+  inset: auto auto 80px 30px;
+}
+
+.Skiploom  a {
+  inset: auto auto 40px 30px;
+  color: inherit;
+  text-decoration: none;
+}
+
+.Skiploom:hover h2 {
+  inset: auto auto 220px 30px;
+  transition: inset 0.3s ease-out;
+}
+
+.Skiploom:hover p,
+.Skiploom:hover a {
+  opacity: 1;
+  transition: opacity 0.5s 0.1s ease-in;
+}
+
+.Skiploom:hover img {
+  transition: opacity 0.3s ease-in;
+  opacity: 1;
+}
+
+.Skiploom  h2 {
+  vertical-align: middle;
+}
+
+
+
+
+
+
+
+
+
+.Purugly {
+  margin-left: 487px;
+  top: -20470px;
+}
+
+.Purugly {
+  width: 20rem;
+  height: 25rem;
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: pointer;
+  position: relative;
+  color: #030303;
+  box-shadow: 0 10px 30px 5px rgba(0, 0, 0, 0.2);
+  font-family: Impact;
+}
+
+.Purugly  img{
+  position: absolute;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0.9;
+  transition: opacity 0.2s ease-out;
+  background: rgb(124, 114, 177);
+}
+
+.Purugly h2{
+  position: absolute;
+  inset: auto auto 30px 30px;
+  margin: 0;
+  transition: inset 0.3s 0.3s ease-out;
+  font-family: "impact", sans-serif;
+  font-weight: normal;
+  text-transform: uppercase;
+  color: rgb(43, 73, 223);
+}
+
+.Purugly  p,
+.Purugly  a {
+  position: absolute;
+  opacity: 0;
+  max-width: 80%;
+  transition: opacity 0.3s ease-out;
+}
+
+.Purugly  p {
+  inset: auto auto 80px 30px;
+}
+
+.Purugly  a {
+  inset: auto auto 40px 30px;
+  color: inherit;
+  text-decoration: none;
+}
+
+.Purugly:hover h2 {
+  inset: auto auto 220px 30px;
+  transition: inset 0.3s ease-out;
+}
+
+.Purugly:hover p,
+.Purugly:hover a {
+  opacity: 1;
+  transition: opacity 0.5s 0.1s ease-in;
+}
+
+.Purugly:hover img {
+  transition: opacity 0.3s ease-in;
+  opacity: 1;
+}
+
+.Purugly  h2 {
+  vertical-align: middle;
+}
+
+
+
+
+
+
+
+
+
+
+
+.MimeJr {
+  margin-left: 487px;
+  top: -20460px;
+}
+
+.MimeJr {
+  width: 20rem;
+  height: 25rem;
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: pointer;
+  position: relative;
+  color: #030303;
+  box-shadow: 0 10px 30px 5px rgba(0, 0, 0, 0.2);
+  font-family: Impact;
+}
+
+.MimeJr  img{
+  position: absolute;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0.9;
+  transition: opacity 0.2s ease-out;
+  background: rgb(124, 114, 177);
+}
+
+.MimeJr h2{
+  position: absolute;
+  inset: auto auto 30px 30px;
+  margin: 0;
+  transition: inset 0.3s 0.3s ease-out;
+  font-family: "impact", sans-serif;
+  font-weight: normal;
+  text-transform: uppercase;
+  color: rgb(43, 73, 223);
+}
+
+.MimeJr  p,
+.MimeJr  a {
+  position: absolute;
+  opacity: 0;
+  max-width: 80%;
+  transition: opacity 0.3s ease-out;
+}
+
+.MimeJr  p {
+  inset: auto auto 80px 30px;
+}
+
+.MimeJr  a {
+  inset: auto auto 40px 30px;
+  color: inherit;
+  text-decoration: none;
+}
+
+.MimeJr:hover h2 {
+  inset: auto auto 220px 30px;
+  transition: inset 0.3s ease-out;
+}
+
+.MimeJr:hover p,
+.MimeJr:hover a {
+  opacity: 1;
+  transition: opacity 0.5s 0.1s ease-in;
+}
+
+.MimeJr:hover img {
+  transition: opacity 0.3s ease-in;
+  opacity: 1;
+}
+
+.MimeJr  h2 {
+  vertical-align: middle;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.Raikou {
+  margin-left: 487px;
+  top: -20450px;
+}
+
+.Raikou {
+  width: 20rem;
+  height: 25rem;
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: pointer;
+  position: relative;
+  color: #030303;
+  box-shadow: 0 10px 30px 5px rgba(0, 0, 0, 0.2);
+  font-family: Impact;
+}
+
+.Raikou  img{
+  position: absolute;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0.9;
+  transition: opacity 0.2s ease-out;
+  background: rgb(207, 197, 54);
+}
+
+.Raikou h2{
+  position: absolute;
+  inset: auto auto 30px 30px;
+  margin: 0;
+  transition: inset 0.3s 0.3s ease-out;
+  font-family: "impact", sans-serif;
+  font-weight: normal;
+  text-transform: uppercase;
+  color: rgb(43, 73, 223);
+}
+
+.Raikou  p,
+.Raikou  a {
+  position: absolute;
+  opacity: 0;
+  max-width: 80%;
+  transition: opacity 0.3s ease-out;
+}
+
+.Raikou  p {
+  inset: auto auto 80px 30px;
+}
+
+.Raikou  a {
+  inset: auto auto 40px 30px;
+  color: inherit;
+  text-decoration: none;
+}
+
+.Raikou:hover h2 {
+  inset: auto auto 220px 30px;
+  transition: inset 0.3s ease-out;
+}
+
+.Raikou:hover p,
+.Raikou:hover a {
+  opacity: 1;
+  transition: opacity 0.5s 0.1s ease-in;
+}
+
+.Raikou:hover img {
+  transition: opacity 0.3s ease-in;
+  opacity: 1;
+}
+
+.Raikou  h2 {
+  vertical-align: middle;
+}
+
+
+
+
+
+
+
+
+
+
+
+.Stunky {
+  margin-left: 487px;
+  top: -20440px;
+}
+
+.Stunky {
+  width: 20rem;
+  height: 25rem;
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: pointer;
+  position: relative;
+  color: #030303;
+  box-shadow: 0 10px 30px 5px rgba(0, 0, 0, 0.2);
+  font-family: Impact;
+}
+
+.Stunky  img{
+  position: absolute;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0.9;
+  transition: opacity 0.2s ease-out;
+  background: rgb(62, 11, 110);
+}
+
+.Stunky h2{
+  position: absolute;
+  inset: auto auto 30px 30px;
+  margin: 0;
+  transition: inset 0.3s 0.3s ease-out;
+  font-family: "impact", sans-serif;
+  font-weight: normal;
+  text-transform: uppercase;
+  color: rgb(43, 73, 223);
+}
+
+.Stunky  p,
+.Stunky  a {
+  position: absolute;
+  opacity: 0;
+  max-width: 80%;
+  transition: opacity 0.3s ease-out;
+}
+
+.Stunky  p {
+  inset: auto auto 80px 30px;
+}
+
+.Stunky  a {
+  inset: auto auto 40px 30px;
+  color: inherit;
+  text-decoration: none;
+}
+
+.Stunky:hover h2 {
+  inset: auto auto 220px 30px;
+  transition: inset 0.3s ease-out;
+}
+
+.Stunky:hover p,
+.Stunky:hover a {
+  opacity: 1;
+  transition: opacity 0.5s 0.1s ease-in;
+}
+
+.Stunky:hover img {
+  transition: opacity 0.3s ease-in;
+  opacity: 1;
+}
+
+.Stunky  h2 {
+  vertical-align: middle;
+}
+
+
+
+
+.Throh {
+  margin-left: 487px;
+  top: -20430px;
+}
+
+.Throh {
+  width: 20rem;
+  height: 25rem;
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: pointer;
+  position: relative;
+  color: #030303;
+  box-shadow: 0 10px 30px 5px rgba(0, 0, 0, 0.2);
+  font-family: Impact;
+}
+
+.Throh  img{
+  position: absolute;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0.9;
+  transition: opacity 0.2s ease-out;
+  background: rgb(182, 43, 43);
+}
+
+.Throh h2{
+  position: absolute;
+  inset: auto auto 30px 30px;
+  margin: 0;
+  transition: inset 0.3s 0.3s ease-out;
+  font-family: "impact", sans-serif;
+  font-weight: normal;
+  text-transform: uppercase;
+  color: rgb(43, 73, 223);
+}
+
+.Throh  p,
+.Throh  a {
+  position: absolute;
+  opacity: 0;
+  max-width: 80%;
+  transition: opacity 0.3s ease-out;
+}
+
+.Throh  p {
+  inset: auto auto 80px 30px;
+}
+
+.Throh  a {
+  inset: auto auto 40px 30px;
+  color: inherit;
+  text-decoration: none;
+}
+
+.Throh:hover h2 {
+  inset: auto auto 220px 30px;
+  transition: inset 0.3s ease-out;
+}
+
+.Throh:hover p,
+.Throh:hover a {
+  opacity: 1;
+  transition: opacity 0.5s 0.1s ease-in;
+}
+
+.Throh:hover img {
+  transition: opacity 0.3s ease-in;
+  opacity: 1;
+}
+
+.Throh  h2 {
+  vertical-align: middle;
+}
+
+
+
+.Flabébé {
+  margin-left: 487px;
+  top: -20420px;
+}
+
+.Flabébé {
+  width: 20rem;
+  height: 25rem;
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: pointer;
+  position: relative;
+  color: #030303;
+  box-shadow: 0 10px 30px 5px rgba(0, 0, 0, 0.2);
+  font-family: Impact;
+}
+
+.Flabébé  img{
+  position: absolute;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0.9;
+  transition: opacity 0.2s ease-out;
+  background: rgb(255, 255, 255);
+}
+
+.Flabébé h2{
+  position: absolute;
+  inset: auto auto 30px 30px;
+  margin: 0;
+  transition: inset 0.3s 0.3s ease-out;
+  font-family: "impact", sans-serif;
+  font-weight: normal;
+  text-transform: uppercase;
+  color: rgb(43, 73, 223);
+}
+
+.Flabébé  p,
+.Flabébé  a {
+  position: absolute;
+  opacity: 0;
+  max-width: 80%;
+  transition: opacity 0.3s ease-out;
+}
+
+.Flabébé  p {
+  inset: auto auto 80px 30px;
+}
+
+.Flabébé  a {
+  inset: auto auto 40px 30px;
+  color: inherit;
+  text-decoration: none;
+}
+
+.Flabébé:hover h2 {
+  inset: auto auto 220px 30px;
+  transition: inset 0.3s ease-out;
+}
+
+.Flabébé:hover p,
+.Flabébé:hover a {
+  opacity: 1;
+  transition: opacity 0.5s 0.1s ease-in;
+}
+
+.Flabébé:hover img {
+  transition: opacity 0.3s ease-in;
+  opacity: 1;
+}
+
+.Flabébé  h2 {
+  vertical-align: middle;
+}
+
+
+
+
+
+.Yanma {
+  margin-left: 487px;
+  top: -20410px;
+}
+
+.Yanma {
+  width: 20rem;
+  height: 25rem;
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: pointer;
+  position: relative;
+  color: #030303;
+  box-shadow: 0 10px 30px 5px rgba(0, 0, 0, 0.2);
+  font-family: Impact;
+}
+
+.Yanma  img{
+  position: absolute;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0.9;
+  transition: opacity 0.2s ease-out;
+  background: rgb(160, 41, 32);
+}
+
+.Yanma h2{
+  position: absolute;
+  inset: auto auto 30px 30px;
+  margin: 0;
+  transition: inset 0.3s 0.3s ease-out;
+  font-family: "impact", sans-serif;
+  font-weight: normal;
+  text-transform: uppercase;
+  color: rgb(43, 73, 223);
+}
+
+.Yanma  p,
+.Yanma  a {
+  position: absolute;
+  opacity: 0;
+  max-width: 80%;
+  transition: opacity 0.3s ease-out;
+}
+
+.Yanma  p {
+  inset: auto auto 80px 30px;
+}
+
+.Yanma  a {
+  inset: auto auto 40px 30px;
+  color: inherit;
+  text-decoration: none;
+}
+
+.Yanma:hover h2 {
+  inset: auto auto 220px 30px;
+  transition: inset 0.3s ease-out;
+}
+
+.Yanma:hover p,
+.Yanma:hover a {
+  opacity: 1;
+  transition: opacity 0.5s 0.1s ease-in;
+}
+
+.Yanma:hover img {
+  transition: opacity 0.3s ease-in;
+  opacity: 1;
+}
+
+.Yanma  h2 {
+  vertical-align: middle;
+}
+
+
+
+
+
+
+
+
+
+.Murkrow {
+  margin-left: 487px;
+  top: -20400px;
+}
+
+.Murkrow {
+  width: 20rem;
+  height: 25rem;
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: pointer;
+  position: relative;
+  color: #030303;
+  box-shadow: 0 10px 30px 5px rgba(0, 0, 0, 0.2);
+  font-family: Impact;
+}
+
+.Murkrow  img{
+  position: absolute;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0.9;
+  transition: opacity 0.2s ease-out;
+  background: rgb(41, 34, 34);
+}
+
+.Murkrow h2{
+  position: absolute;
+  inset: auto auto 30px 30px;
+  margin: 0;
+  transition: inset 0.3s 0.3s ease-out;
+  font-family: "impact", sans-serif;
+  font-weight: normal;
+  text-transform: uppercase;
+  color: rgb(43, 73, 223);
+}
+
+.Murkrow  p,
+.Murkrow  a {
+  position: absolute;
+  opacity: 0;
+  max-width: 80%;
+  transition: opacity 0.3s ease-out;
+}
+
+.Murkrow  p {
+  inset: auto auto 80px 30px;
+}
+
+.Murkrow  a {
+  inset: auto auto 40px 30px;
+  color: inherit;
+  text-decoration: none;
+}
+
+.Murkrow:hover h2 {
+  inset: auto auto 220px 30px;
+  transition: inset 0.3s ease-out;
+}
+
+.Murkrow:hover p,
+.Murkrow:hover a {
+  opacity: 1;
+  transition: opacity 0.5s 0.1s ease-in;
+}
+
+.Murkrow:hover img {
+  transition: opacity 0.3s ease-in;
+  opacity: 1;
+}
+
+.Murkrow  h2 {
+  vertical-align: middle;
+}
+
+
+
+
+
+
+
+
+
+
+
+.Blissey  {
+  margin-left: 19px;
+  top: -26947px;
+}
+
+.Blissey{
+  width: 20rem;
+  height: 25rem;
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: pointer;
+  position: relative;
+  color: #030303;
+  box-shadow: 0 10px 30px 5px rgba(0, 0, 0, 0.2);
+  font-family: Impact;
+}
+
+.Blissey img {
+  position: absolute;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0.9;
+  transition: opacity 0.2s ease-out;
+  background: rgb(214, 131, 211);
+}
+
+.Blissey h2 {
+  position: absolute;
+  inset: auto auto 30px 30px;
+  margin: 0;
+  transition: inset 0.3s 0.3s ease-out;
+  font-family: "impact", sans-serif;
+  font-weight: normal;
+  text-transform: uppercase;
+  color: rgb(246, 247, 252);
+}
+
+.Blissey p,
+.Blissey a {
+  position: absolute;
+  opacity: 0;
+  max-width: 80%;
+  transition: opacity 0.3s ease-out;
+}
+
+.Blissey p {
+  inset: auto auto 80px 30px;
+}
+
+.Blissey a {
+  inset: auto auto 40px 30px;
+  color: inherit;
+  text-decoration: none;
+}
+
+.Blissey:hover h2 {
+  inset: auto auto 220px 30px;
+  transition: inset 0.3s ease-out;
+}
+
+.Blissey:hover p,
+.Blissey:hover a {
+  opacity: 1;
+  transition: opacity 0.5s 0.1s ease-in;
+}
+
+.Blissey:hover img {
+  transition: opacity 0.3s ease-in;
+  opacity: 1;
+}
+
+.Blissey h2 {
+  vertical-align: middle;
+}
+
+
+
+
+
+
+
+.Banette  {
+  margin-left: 19px;
+  top: -26937px;
+}
+
+.Banette{
+  width: 20rem;
+  height: 25rem;
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: pointer;
+  position: relative;
+  color: #030303;
+  box-shadow: 0 10px 30px 5px rgba(0, 0, 0, 0.2);
+  font-family: Impact;
+}
+
+.Banette img {
+  position: absolute;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0.9;
+  transition: opacity 0.2s ease-out;
+  background: rgb(20, 15, 20);
+}
+
+.Banette h2 {
+  position: absolute;
+  inset: auto auto 30px 30px;
+  margin: 0;
+  transition: inset 0.3s 0.3s ease-out;
+  font-family: "impact", sans-serif;
+  font-weight: normal;
+  text-transform: uppercase;
+  color: rgb(246, 247, 252);
+}
+
+.Banette p,
+.Banette a {
+  position: absolute;
+  opacity: 0;
+  max-width: 80%;
+  transition: opacity 0.3s ease-out;
+}
+
+.Banette p {
+  inset: auto auto 80px 30px;
+}
+
+.Banette a {
+  inset: auto auto 40px 30px;
+  color: inherit;
+  text-decoration: none;
+}
+
+.Banette:hover h2 {
+  inset: auto auto 220px 30px;
+  transition: inset 0.3s ease-out;
+}
+
+.Banette:hover p,
+.Banette:hover a {
+  opacity: 1;
+  transition: opacity 0.5s 0.1s ease-in;
+}
+
+.Banette:hover img {
+  transition: opacity 0.3s ease-in;
+  opacity: 1;
+}
+
+.Banette h2 {
+  vertical-align: middle;
+}
+
+
+
+
+
+
+.Grimer  {
+  margin-left: 19px;
+  top: -26927px;
+}
+
+.Grimer{
+  width: 20rem;
+  height: 25rem;
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: pointer;
+  position: relative;
+  color: #6f258d;
+  box-shadow: 0 10px 30px 5px rgba(0, 0, 0, 0.2);
+  font-family: Impact;
+}
+
+.Grimer img {
+  position: absolute;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0.9;
+  transition: opacity 0.2s ease-out;
+  background: rgb(116, 11, 116);
+}
+
+.Grimer h2 {
+  position: absolute;
+  inset: auto auto 30px 30px;
+  margin: 0;
+  transition: inset 0.3s 0.3s ease-out;
+  font-family: "impact", sans-serif;
+  font-weight: normal;
+  text-transform: uppercase;
+  color: rgb(246, 247, 252);
+}
+
+.Grimer p,
+.Grimer a {
+  position: absolute;
+  opacity: 0;
+  max-width: 80%;
+  transition: opacity 0.3s ease-out;
+}
+
+.Grimer p {
+  inset: auto auto 80px 30px;
+}
+
+.Banette a {
+  inset: auto auto 40px 30px;
+  color: inherit;
+  text-decoration: none;
+}
+
+.Grimer:hover h2 {
+  inset: auto auto 220px 30px;
+  transition: inset 0.3s ease-out;
+}
+
+.Grimer:hover p,
+.Grimer:hover a {
+  opacity: 1;
+  transition: opacity 0.5s 0.1s ease-in;
+}
+
+.Grimer:hover img {
+  transition: opacity 0.3s ease-in;
+  opacity: 1;
+}
+
+.Grimer h2 {
+  vertical-align: middle;
+}
+
+
+
+
+
+
+
+.Thievul  {
+  margin-left: 19px;
+  top: -26917px;
+}
+
+.Thievul{
+  width: 20rem;
+  height: 25rem;
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: pointer;
+  position: relative;
+  color: #6f258d;
+  box-shadow: 0 10px 30px 5px rgba(0, 0, 0, 0.2);
+  font-family: Impact;
+}
+
+.Thievul img {
+  position: absolute;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0.9;
+  transition: opacity 0.2s ease-out;
+  background: rgb(116, 58, 11);
+}
+
+.Thievul h2 {
+  position: absolute;
+  inset: auto auto 30px 30px;
+  margin: 0;
+  transition: inset 0.3s 0.3s ease-out;
+  font-family: "impact", sans-serif;
+  font-weight: normal;
+  text-transform: uppercase;
+  color: rgb(246, 247, 252);
+}
+
+.Thievul p,
+.Thievul a {
+  position: absolute;
+  opacity: 0;
+  max-width: 80%;
+  transition: opacity 0.3s ease-out;
+}
+
+.Thievul p {
+  inset: auto auto 80px 30px;
+}
+
+.Thievul a {
+  inset: auto auto 40px 30px;
+  color: inherit;
+  text-decoration: none;
+}
+
+.Thievul:hover h2 {
+  inset: auto auto 220px 30px;
+  transition: inset 0.3s ease-out;
+}
+
+.Thievul:hover p,
+.Thievul:hover a {
+  opacity: 1;
+  transition: opacity 0.5s 0.1s ease-in;
+}
+
+.Thievul:hover img {
+  transition: opacity 0.3s ease-in;
+  opacity: 1;
+}
+
+.Thievul h2 {
+  vertical-align: middle;
+}
+
+
+
+
+
+.Altaria  {
+  margin-left: 19px;
+  top: -26907px;
+}
+
+.Altaria{
+  width: 20rem;
+  height: 25rem;
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: pointer;
+  position: relative;
+  color: #6f258d;
+  box-shadow: 0 10px 30px 5px rgba(0, 0, 0, 0.2);
+  font-family: Impact;
+}
+
+.Altaria img {
+  position: absolute;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0.9;
+  transition: opacity 0.2s ease-out;
+  background: rgb(11, 92, 116);
+}
+
+.Altaria h2 {
+  position: absolute;
+  inset: auto auto 30px 30px;
+  margin: 0;
+  transition: inset 0.3s 0.3s ease-out;
+  font-family: "impact", sans-serif;
+  font-weight: normal;
+  text-transform: uppercase;
+  color: rgb(246, 247, 252);
+}
+
+.Altaria p,
+.Altaria a {
+  position: absolute;
+  opacity: 0;
+  max-width: 80%;
+  transition: opacity 0.3s ease-out;
+}
+
+.Altaria p {
+  inset: auto auto 80px 30px;
+}
+
+.Altaria a {
+  inset: auto auto 40px 30px;
+  color: inherit;
+  text-decoration: none;
+}
+
+.Altaria:hover h2 {
+  inset: auto auto 220px 30px;
+  transition: inset 0.3s ease-out;
+}
+
+.Altaria:hover p,
+.Altaria:hover a {
+  opacity: 1;
+  transition: opacity 0.5s 0.1s ease-in;
+}
+
+.Altaria:hover img {
+  transition: opacity 0.3s ease-in;
+  opacity: 1;
+}
+
+.Altaria h2 {
+  vertical-align: middle;
+}
+
+
+
+
+
+
+.Kartana  {
+  margin-left: 19px;
+  top: -26897px;
+}
+
+.Kartana{
+  width: 20rem;
+  height: 25rem;
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: pointer;
+  position: relative;
+  color: #6f258d;
+  box-shadow: 0 10px 30px 5px rgba(0, 0, 0, 0.2);
+  font-family: Impact;
+}
+
+.Kartana img {
+  position: absolute;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0.9;
+  transition: opacity 0.2s ease-out;
+  background: rgb(255, 255, 255);
+}
+
+.Kartana h2 {
+  position: absolute;
+  inset: auto auto 30px 30px;
+  margin: 0;
+  transition: inset 0.3s 0.3s ease-out;
+  font-family: "impact", sans-serif;
+  font-weight: normal;
+  text-transform: uppercase;
+  color: rgb(22, 39, 124);
+}
+
+.Kartana p,
+.Kartana a {
+  position: absolute;
+  opacity: 0;
+  max-width: 80%;
+  transition: opacity 0.3s ease-out;
+}
+
+.Kartana p {
+  inset: auto auto 80px 30px;
+}
+
+.Kartana a {
+  inset: auto auto 40px 30px;
+  color: inherit;
+  text-decoration: none;
+}
+
+.Kartana:hover h2 {
+  inset: auto auto 220px 30px;
+  transition: inset 0.3s ease-out;
+}
+
+.Kartana:hover p,
+.Kartana:hover a {
+  opacity: 1;
+  transition: opacity 0.5s 0.1s ease-in;
+}
+
+.Kartana:hover img {
+  transition: opacity 0.3s ease-in;
+  opacity: 1;
+}
+
+.Kartana h2 {
+  vertical-align: middle;
+}
+
+
+
+
+
+
+
+
+.Smeargle  {
+  margin-left: 19px;
+  top: -26887px;
+}
+
+.Smeargle{
+  width: 20rem;
+  height: 25rem;
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: pointer;
+  position: relative;
+  color: #6f258d;
+  box-shadow: 0 10px 30px 5px rgba(0, 0, 0, 0.2);
+  font-family: Impact;
+}
+
+.Smeargle img {
+  position: absolute;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0.9;
+  transition: opacity 0.2s ease-out;
+  background: rgb(255, 255, 255);
+}
+
+.Smeargle h2 {
+  position: absolute;
+  inset: auto auto 30px 30px;
+  margin: 0;
+  transition: inset 0.3s 0.3s ease-out;
+  font-family: "impact", sans-serif;
+  font-weight: normal;
+  text-transform: uppercase;
+  color: rgb(22, 39, 124);
+}
+
+.Smeargle p,
+.Smeargle a {
+  position: absolute;
+  opacity: 0;
+  max-width: 80%;
+  transition: opacity 0.3s ease-out;
+}
+
+.Smeargle p {
+  inset: auto auto 80px 30px;
+}
+
+.Smeargle a {
+  inset: auto auto 40px 30px;
+  color: inherit;
+  text-decoration: none;
+}
+
+.Smeargle:hover h2 {
+  inset: auto auto 220px 30px;
+  transition: inset 0.3s ease-out;
+}
+
+.Smeargle:hover p,
+.Smeargle:hover a {
+  opacity: 1;
+  transition: opacity 0.5s 0.1s ease-in;
+}
+
+.Smeargle:hover img {
+  transition: opacity 0.3s ease-in;
+  opacity: 1;
+}
+
+.Smeargle h2 {
+  vertical-align: middle;
+}
+
+
+
+
+
+
+
+.TapuBulu  {
+  margin-left: 19px;
+  top: -26877px;
+}
+
+.TapuBulu{
+  width: 20rem;
+  height: 25rem;
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: pointer;
+  position: relative;
+  color: #6f258d;
+  box-shadow: 0 10px 30px 5px rgba(0, 0, 0, 0.2);
+  font-family: Impact;
+}
+
+.TapuBulu img {
+  position: absolute;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0.9;
+  transition: opacity 0.2s ease-out;
+  background: rgb(199, 86, 86);
+}
+
+.TapuBulu h2 {
+  position: absolute;
+  inset: auto auto 30px 30px;
+  margin: 0;
+  transition: inset 0.3s 0.3s ease-out;
+  font-family: "impact", sans-serif;
+  font-weight: normal;
+  text-transform: uppercase;
+  color: rgb(22, 39, 124);
+}
+
+.TapuBulu p,
+.TapuBulu a {
+  position: absolute;
+  opacity: 0;
+  max-width: 80%;
+  transition: opacity 0.3s ease-out;
+}
+
+.TapuBulu p {
+  inset: auto auto 80px 30px;
+}
+
+.TapuBulu a {
+  inset: auto auto 40px 30px;
+  color: inherit;
+  text-decoration: none;
+}
+
+.TapuBulu:hover h2 {
+  inset: auto auto 220px 30px;
+  transition: inset 0.3s ease-out;
+}
+
+.TapuBulu:hover p,
+.TapuBulu:hover a {
+  opacity: 1;
+  transition: opacity 0.5s 0.1s ease-in;
+}
+
+.TapuBulu:hover img {
+  transition: opacity 0.3s ease-in;
+  opacity: 1;
+}
+
+.TapuBulu h2 {
+  vertical-align: middle;
+}
+
+
+
+
+
+
+
+
+.Fraxure  {
+  margin-left: 19px;
+  top: -26867px;
+}
+
+.Fraxure{
+  width: 20rem;
+  height: 25rem;
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: pointer;
+  position: relative;
+  color: #6f258d;
+  box-shadow: 0 10px 30px 5px rgba(0, 0, 0, 0.2);
+  font-family: Impact;
+}
+
+.Fraxure img {
+  position: absolute;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0.9;
+  transition: opacity 0.2s ease-out;
+  background: rgb(95, 199, 86);
+}
+
+.Fraxure h2 {
+  position: absolute;
+  inset: auto auto 30px 30px;
+  margin: 0;
+  transition: inset 0.3s 0.3s ease-out;
+  font-family: "impact", sans-serif;
+  font-weight: normal;
+  text-transform: uppercase;
+  color: rgb(22, 39, 124);
+}
+
+.Fraxure p,
+.Fraxure a {
+  position: absolute;
+  opacity: 0;
+  max-width: 80%;
+  transition: opacity 0.3s ease-out;
+}
+
+.Fraxure p {
+  inset: auto auto 80px 30px;
+}
+
+.Fraxure a {
+  inset: auto auto 40px 30px;
+  color: inherit;
+  text-decoration: none;
+}
+
+.Fraxure:hover h2 {
+  inset: auto auto 220px 30px;
+  transition: inset 0.3s ease-out;
+}
+
+.Fraxure:hover p,
+.Fraxure:hover a {
+  opacity: 1;
+  transition: opacity 0.5s 0.1s ease-in;
+}
+
+.Fraxure:hover img {
+  transition: opacity 0.3s ease-in;
+  opacity: 1;
+}
+
+.Fraxure h2 {
+  vertical-align: middle;
+}
+
+
+
+
+.Lycanroc  {
+  margin-left: 19px;
+  top: -26857px;
+}
+
+.Lycanroc{
+  width: 20rem;
+  height: 25rem;
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: pointer;
+  position: relative;
+  color: #6f258d;
+  box-shadow: 0 10px 30px 5px rgba(0, 0, 0, 0.2);
+  font-family: Impact;
+}
+
+.Lycanroc img {
+  position: absolute;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0.9;
+  transition: opacity 0.2s ease-out;
+  background: rgb(244, 245, 244);
+}
+
+.Lycanroc h2 {
+  position: absolute;
+  inset: auto auto 30px 30px;
+  margin: 0;
+  transition: inset 0.3s 0.3s ease-out;
+  font-family: "impact", sans-serif;
+  font-weight: normal;
+  text-transform: uppercase;
+  color: rgb(22, 39, 124);
+}
+
+.Lycanroc p,
+.Lycanroc a {
+  position: absolute;
+  opacity: 0;
+  max-width: 80%;
+  transition: opacity 0.3s ease-out;
+}
+
+.Lycanroc p {
+  inset: auto auto 80px 30px;
+}
+
+.Lycanroc a {
+  inset: auto auto 40px 30px;
+  color: inherit;
+  text-decoration: none;
+}
+
+.Lycanroc:hover h2 {
+  inset: auto auto 220px 30px;
+  transition: inset 0.3s ease-out;
+}
+
+.Lycanroc:hover p,
+.Lycanroc:hover a {
+  opacity: 1;
+  transition: opacity 0.5s 0.1s ease-in;
+}
+
+.Lycanroc:hover img {
+  transition: opacity 0.3s ease-in;
+  opacity: 1;
+}
+
+.Lycanroc h2 {
+  vertical-align: middle;
+}
+
+
+
+
+
+
+
+.Poliwhirl  {
+  margin-left: 19px;
+  top: -26847px;
+}
+
+.Poliwhirl{
+  width: 20rem;
+  height: 25rem;
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: pointer;
+  position: relative;
+  color: #6f258d;
+  box-shadow: 0 10px 30px 5px rgba(0, 0, 0, 0.2);
+  font-family: Impact;
+}
+
+.Poliwhirl img {
+  position: absolute;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0.9;
+  transition: opacity 0.2s ease-out;
+  background: rgb(92, 85, 201);
+}
+
+.Poliwhirl h2 {
+  position: absolute;
+  inset: auto auto 30px 30px;
+  margin: 0;
+  transition: inset 0.3s 0.3s ease-out;
+  font-family: "impact", sans-serif;
+  font-weight: normal;
+  text-transform: uppercase;
+  color: rgb(22, 39, 124);
+}
+
+.Poliwhirl p,
+.Poliwhirl a {
+  position: absolute;
+  opacity: 0;
+  max-width: 80%;
+  transition: opacity 0.3s ease-out;
+}
+
+.Poliwhirl p {
+  inset: auto auto 80px 30px;
+}
+
+.Poliwhirl a {
+  inset: auto auto 40px 30px;
+  color: inherit;
+  text-decoration: none;
+}
+
+.Poliwhirl:hover h2 {
+  inset: auto auto 220px 30px;
+  transition: inset 0.3s ease-out;
+}
+
+.Poliwhirl:hover p,
+.Poliwhirl:hover a {
+  opacity: 1;
+  transition: opacity 0.5s 0.1s ease-in;
+}
+
+.Poliwhirl:hover img {
+  transition: opacity 0.3s ease-in;
+  opacity: 1;
+}
+
+.Poliwhirl h2 {
+  vertical-align: middle;
+}
+
+
+
+
+
+
+
+.Octillery  {
+  margin-left: 19px;
+  top: -26837px;
+}
+
+.Octillery{
+  width: 20rem;
+  height: 25rem;
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: pointer;
+  position: relative;
+  color: #6f258d;
+  box-shadow: 0 10px 30px 5px rgba(0, 0, 0, 0.2);
+  font-family: Impact;
+}
+
+.Octillery img {
+  position: absolute;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0.9;
+  transition: opacity 0.2s ease-out;
+  background: rgb(179, 47, 47);
+}
+
+.Octillery h2 {
+  position: absolute;
+  inset: auto auto 30px 30px;
+  margin: 0;
+  transition: inset 0.3s 0.3s ease-out;
+  font-family: "impact", sans-serif;
+  font-weight: normal;
+  text-transform: uppercase;
+  color: rgb(22, 39, 124);
+}
+
+.Octillery p,
+.Octillery a {
+  position: absolute;
+  opacity: 0;
+  max-width: 80%;
+  transition: opacity 0.3s ease-out;
+}
+
+.Octillery p {
+  inset: auto auto 80px 30px;
+}
+
+.Octillery a {
+  inset: auto auto 40px 30px;
+  color: inherit;
+  text-decoration: none;
+}
+
+.Octillery:hover h2 {
+  inset: auto auto 220px 30px;
+  transition: inset 0.3s ease-out;
+}
+
+.Octillery:hover p,
+.Octillery:hover a {
+  opacity: 1;
+  transition: opacity 0.5s 0.1s ease-in;
+}
+
+.Octillery:hover img {
+  transition: opacity 0.3s ease-in;
+  opacity: 1;
+}
+
+.Octillery h2 {
+  vertical-align: middle;
+}
+
+
+
+
+
+
+.Grapploct  {
+  margin-left: 19px;
+  top: -26827px;
+}
+
+.Grapploct{
+  width: 20rem;
+  height: 25rem;
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: pointer;
+  position: relative;
+  color: #6f258d;
+  box-shadow: 0 10px 30px 5px rgba(0, 0, 0, 0.2);
+  font-family: Impact;
+}
+
+.Grapploct img {
+  position: absolute;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0.9;
+  transition: opacity 0.2s ease-out;
+  background: rgb(92, 85, 201);
+}
+
+.Grapploct h2 {
+  position: absolute;
+  inset: auto auto 30px 30px;
+  margin: 0;
+  transition: inset 0.3s 0.3s ease-out;
+  font-family: "impact", sans-serif;
+  font-weight: normal;
+  text-transform: uppercase;
+  color: rgb(22, 39, 124);
+}
+
+.Grapploct p,
+.Grapploct a {
+  position: absolute;
+  opacity: 0;
+  max-width: 80%;
+  transition: opacity 0.3s ease-out;
+}
+
+.Grapploct p {
+  inset: auto auto 80px 30px;
+}
+
+.Grapploct a {
+  inset: auto auto 40px 30px;
+  color: inherit;
+  text-decoration: none;
+}
+
+.Grapploct:hover h2 {
+  inset: auto auto 220px 30px;
+  transition: inset 0.3s ease-out;
+}
+
+.Grapploct:hover p,
+.Grapploct:hover a {
+  opacity: 1;
+  transition: opacity 0.5s 0.1s ease-in;
+}
+
+.Grapploct:hover img {
+  transition: opacity 0.3s ease-in;
+  opacity: 1;
+}
+
+.Grapploct h2 {
+  vertical-align: middle;
+}
+
+
+
+
+.Tympole  {
+  margin-left: 19px;
+  top: -26817px;
+}
+
+.Tympole{
+  width: 20rem;
+  height: 25rem;
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: pointer;
+  position: relative;
+  color: #6f258d;
+  box-shadow: 0 10px 30px 5px rgba(0, 0, 0, 0.2);
+  font-family: Impact;
+}
+
+.Tympole img {
+  position: absolute;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0.9;
+  transition: opacity 0.2s ease-out;
+  background: rgb(74, 174, 194);
+}
+
+.Tympole h2 {
+  position: absolute;
+  inset: auto auto 30px 30px;
+  margin: 0;
+  transition: inset 0.3s 0.3s ease-out;
+  font-family: "impact", sans-serif;
+  font-weight: normal;
+  text-transform: uppercase;
+  color: rgb(22, 39, 124);
+}
+
+.Tympole p,
+.Tympole a {
+  position: absolute;
+  opacity: 0;
+  max-width: 80%;
+  transition: opacity 0.3s ease-out;
+}
+
+.Tympole p {
+  inset: auto auto 80px 30px;
+}
+
+.Tympole a {
+  inset: auto auto 40px 30px;
+  color: inherit;
+  text-decoration: none;
+}
+
+.Tympole:hover h2 {
+  inset: auto auto 220px 30px;
+  transition: inset 0.3s ease-out;
+}
+
+.Tympole:hover p,
+.Tympole:hover a {
+  opacity: 1;
+  transition: opacity 0.5s 0.1s ease-in;
+}
+
+.Tympole:hover img {
+  transition: opacity 0.3s ease-in;
+  opacity: 1;
+}
+
+.Tympole h2 {
+  vertical-align: middle;
+}
+
+
+
+
+.Jirachi  {
+  margin-left: 19px;
+  top: -26807px;
+}
+
+.Jirachi{
+  width: 20rem;
+  height: 25rem;
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: pointer;
+  position: relative;
+  color: #6f258d;
+  box-shadow: 0 10px 30px 5px rgba(0, 0, 0, 0.2);
+  font-family: Impact;
+}
+
+.Jirachi img {
+  position: absolute;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0.9;
+  transition: opacity 0.2s ease-out;
+  background: rgb(224, 217, 146);
+}
+
+.Jirachi h2 {
+  position: absolute;
+  inset: auto auto 30px 30px;
+  margin: 0;
+  transition: inset 0.3s 0.3s ease-out;
+  font-family: "impact", sans-serif;
+  font-weight: normal;
+  text-transform: uppercase;
+  color: rgb(22, 39, 124);
+}
+
+.Jirachi p,
+.Jirachi a {
+  position: absolute;
+  opacity: 0;
+  max-width: 80%;
+  transition: opacity 0.3s ease-out;
+}
+
+.Jirachi p {
+  inset: auto auto 80px 30px;
+}
+
+.Jirachi a {
+  inset: auto auto 40px 30px;
+  color: inherit;
+  text-decoration: none;
+}
+
+.Jirachi:hover h2 {
+  inset: auto auto 220px 30px;
+  transition: inset 0.3s ease-out;
+}
+
+.Jirachi:hover p,
+.Jirachi:hover a {
+  opacity: 1;
+  transition: opacity 0.5s 0.1s ease-in;
+}
+
+.Jirachi:hover img {
+  transition: opacity 0.3s ease-in;
+  opacity: 1;
+}
+
+.Jirachi h2 {
+  vertical-align: middle;
+}
+
+
+
+
+.Shiinotic  {
+  margin-left: 19px;
+  top: -26797px;
+}
+
+.Shiinotic{
+  width: 20rem;
+  height: 25rem;
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: pointer;
+  position: relative;
+  color: #6f258d;
+  box-shadow: 0 10px 30px 5px rgba(0, 0, 0, 0.2);
+  font-family: Impact;
+}
+
+.Shiinotic img {
+  position: absolute;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0.9;
+  transition: opacity 0.2s ease-out;
+  background: rgb(149, 87, 155);
+}
+
+.Shiinotic h2 {
+  position: absolute;
+  inset: auto auto 30px 30px;
+  margin: 0;
+  transition: inset 0.3s 0.3s ease-out;
+  font-family: "impact", sans-serif;
+  font-weight: normal;
+  text-transform: uppercase;
+  color: rgb(22, 39, 124);
+}
+
+.Shiinotic p,
+.Shiinotic a {
+  position: absolute;
+  opacity: 0;
+  max-width: 80%;
+  transition: opacity 0.3s ease-out;
+}
+
+.Shiinotic p {
+  inset: auto auto 80px 30px;
+}
+
+.Shiinotic a {
+  inset: auto auto 40px 30px;
+  color: inherit;
+  text-decoration: none;
+}
+
+.Shiinotic:hover h2 {
+  inset: auto auto 220px 30px;
+  transition: inset 0.3s ease-out;
+}
+
+.Shiinotic:hover p,
+.Shiinotic:hover a {
+  opacity: 1;
+  transition: opacity 0.5s 0.1s ease-in;
+}
+
+.Shiinotic:hover img {
+  transition: opacity 0.3s ease-in;
+  opacity: 1;
+}
+
+.Shiinotic h2 {
+  vertical-align: middle;
+}
+
+
+
+
+
+
+
+
+
+
+
+.Dragonair  {
+  margin-left: 19px;
+  top: -26797px;
+}
+
+.Dragonair{
+  width: 20rem;
+  height: 25rem;
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: pointer;
+  position: relative;
+  color: #6f258d;
+  box-shadow: 0 10px 30px 5px rgba(0, 0, 0, 0.2);
+  font-family: Impact;
+}
+
+.Dragonair img {
+  position: absolute;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0.9;
+  transition: opacity 0.2s ease-out;
+  background: rgb(149, 87, 155);
+}
+
+.Dragonair h2 {
+  position: absolute;
+  inset: auto auto 30px 30px;
+  margin: 0;
+  transition: inset 0.3s 0.3s ease-out;
+  font-family: "impact", sans-serif;
+  font-weight: normal;
+  text-transform: uppercase;
+  color: rgb(22, 39, 124);
+}
+
+.Dragonair p,
+.Dragonair a {
+  position: absolute;
+  opacity: 0;
+  max-width: 80%;
+  transition: opacity 0.3s ease-out;
+}
+
+.Dragonair p {
+  inset: auto auto 80px 30px;
+}
+
+.Dragonair a {
+  inset: auto auto 40px 30px;
+  color: inherit;
+  text-decoration: none;
+}
+
+.Dragonair:hover h2 {
+  inset: auto auto 220px 30px;
+  transition: inset 0.3s ease-out;
+}
+
+.Dragonair:hover p,
+.Dragonair:hover a {
+  opacity: 1;
+  transition: opacity 0.5s 0.1s ease-in;
+}
+
+.Dragonair:hover img {
+  transition: opacity 0.3s ease-in;
+  opacity: 1;
+}
+
+.Dragonair h2 {
+  vertical-align: middle;
+}
+
+
+
+
+
+
+.Dragonair  {
+  margin-left: 19px;
+  top: -26797px;
+}
+
+.Dragonair{
+  width: 20rem;
+  height: 25rem;
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: pointer;
+  position: relative;
+  color: #6f258d;
+  box-shadow: 0 10px 30px 5px rgba(0, 0, 0, 0.2);
+  font-family: Impact;
+}
+
+.Dragonair img {
+  position: absolute;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0.9;
+  transition: opacity 0.2s ease-out;
+  background: rgb(179, 0, 196);
+}
+
+.Dragonair h2 {
+  position: absolute;
+  inset: auto auto 30px 30px;
+  margin: 0;
+  transition: inset 0.3s 0.3s ease-out;
+  font-family: "impact", sans-serif;
+  font-weight: normal;
+  text-transform: uppercase;
+  color: rgb(22, 39, 124);
+}
+
+.Dragonair p,
+.Dragonair a {
+  position: absolute;
+  opacity: 0;
+  max-width: 80%;
+  transition: opacity 0.3s ease-out;
+}
+
+.Dragonair p {
+  inset: auto auto 80px 30px;
+}
+
+.Dragonair a {
+  inset: auto auto 40px 30px;
+  color: inherit;
+  text-decoration: none;
+}
+
+.Dragonair:hover h2 {
+  inset: auto auto 220px 30px;
+  transition: inset 0.3s ease-out;
+}
+
+.Dragonair:hover p,
+.Dragonair:hover a {
+  opacity: 1;
+  transition: opacity 0.5s 0.1s ease-in;
+}
+
+.Dragonair:hover img {
+  transition: opacity 0.3s ease-in;
+  opacity: 1;
+}
+
+.Dragonair h2 {
+  vertical-align: middle;
+}
+
+
+
